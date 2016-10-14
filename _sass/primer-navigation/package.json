@@ -1,0 +1,107 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "primer-navigation@*",
+        "scope": null,
+        "escapedName": "primer-navigation",
+        "name": "primer-navigation",
+        "rawSpec": "*",
+        "spec": "*",
+        "type": "range"
+      },
+      "/Users/benbalter/projects/jekyll-theme-primer/node_modules/primer-css"
+    ]
+  ],
+  "_from": "primer-navigation@*",
+  "_id": "primer-navigation@0.5.0",
+  "_inCache": true,
+  "_location": "/primer-navigation",
+  "_nodeVersion": "5.12.0",
+  "_npmOperationalInternal": {
+    "host": "packages-16-east.internal.npmjs.com",
+    "tmp": "tmp/primer-navigation-0.5.0.tgz_1472778581186_0.3147027771919966"
+  },
+  "_npmUser": {
+    "name": "jonrohan",
+    "email": "yes@jonrohan.codes"
+  },
+  "_npmVersion": "3.8.6",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "primer-navigation@*",
+    "scope": null,
+    "escapedName": "primer-navigation",
+    "name": "primer-navigation",
+    "rawSpec": "*",
+    "spec": "*",
+    "type": "range"
+  },
+  "_requiredBy": [
+    "/primer-css"
+  ],
+  "_resolved": "https://registry.npmjs.org/primer-navigation/-/primer-navigation-0.5.0.tgz",
+  "_shasum": "32c5a4d53ae00e59b3ea2a674a6123739dbd7c70",
+  "_shrinkwrap": null,
+  "_spec": "primer-navigation@*",
+  "_where": "/Users/benbalter/projects/jekyll-theme-primer/node_modules/primer-css",
+  "author": {
+    "name": "GitHub, Inc."
+  },
+  "bugs": {
+    "url": "https://github.com/primer/navigation/issues"
+  },
+  "dependencies": {
+    "primer-support": "*"
+  },
+  "description": "Singular purpose and flexible navigation elements.",
+  "devDependencies": {
+    "autoprefixer": "^6.3.6",
+    "node-sass": "^3.7.0",
+    "postcss-cli": "^2.5.2",
+    "stylelint": "^7.0.3",
+    "stylelint-config-primer": "^1.1.0"
+  },
+  "directories": {},
+  "dist": {
+    "shasum": "32c5a4d53ae00e59b3ea2a674a6123739dbd7c70",
+    "tarball": "https://registry.npmjs.org/primer-navigation/-/primer-navigation-0.5.0.tgz"
+  },
+  "files": [
+    "index.scss",
+    "lib",
+    "build"
+  ],
+  "gitHead": "9afc98b485bf07299541ea4d0eef9cc94ff0fca0",
+  "homepage": "http://primercss.io/",
+  "keywords": [
+    "primer",
+    "css",
+    "github",
+    "primercss",
+    "nav",
+    "navigation"
+  ],
+  "license": "MIT",
+  "maintainers": [
+    {
+      "name": "jonrohan",
+      "email": "yes@jonrohan.codes"
+    }
+  ],
+  "name": "primer-navigation",
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/primer/navigation.git"
+  },
+  "scripts": {
+    "build": "node-sass index.scss --include-path node_modules --output-style compressed | postcss -c .postcss.json -o build/build.css",
+    "prepublish": "npm run setup && npm run build",
+    "setup": "if [ ! -d \"node_modules\" ]; then npm install; fi",
+    "test": "npm run build && stylelint **/*.scss -c .stylelintrc.json -s scss"
+  },
+  "style": "index.scss",
+  "version": "0.5.0"
+}

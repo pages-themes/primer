@@ -1,0 +1,14 @@
+#!/bin/sh
+# Install NPM dependencies to _sass directory and symlink to node_modules
+
+set -e
+
+npm install
+mv node_modules _sass
+ln -s _sass node_modules
+
+# Normalize.css is distributed as CSS, which Sass dosen't like. Convert to scss.
+mv -f _sass/normalize.css/normalize.css _sass/normalize.css/normalize.scss
+
+# Add our own theme scss file for consistency of naming in `assets/style.scss`
+echo '@import "primer-css/index.scss";' >> _sass/jekyll-theme-primer.scss

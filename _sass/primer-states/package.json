@@ -1,0 +1,105 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "primer-states@*",
+        "scope": null,
+        "escapedName": "primer-states",
+        "name": "primer-states",
+        "rawSpec": "*",
+        "spec": "*",
+        "type": "range"
+      },
+      "/Users/benbalter/projects/jekyll-theme-primer/node_modules/primer-css"
+    ]
+  ],
+  "_from": "primer-states@*",
+  "_id": "primer-states@0.3.0",
+  "_inCache": true,
+  "_location": "/primer-states",
+  "_nodeVersion": "5.12.0",
+  "_npmOperationalInternal": {
+    "host": "packages-16-east.internal.npmjs.com",
+    "tmp": "tmp/primer-states-0.3.0.tgz_1471631167781_0.852298631798476"
+  },
+  "_npmUser": {
+    "name": "jonrohan",
+    "email": "yes@jonrohan.codes"
+  },
+  "_npmVersion": "3.8.6",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "primer-states@*",
+    "scope": null,
+    "escapedName": "primer-states",
+    "name": "primer-states",
+    "rawSpec": "*",
+    "spec": "*",
+    "type": "range"
+  },
+  "_requiredBy": [
+    "/primer-css"
+  ],
+  "_resolved": "https://registry.npmjs.org/primer-states/-/primer-states-0.3.0.tgz",
+  "_shasum": "3c5911e2a431b11dc02f53e3c267fd1f63a074c7",
+  "_shrinkwrap": null,
+  "_spec": "primer-states@*",
+  "_where": "/Users/benbalter/projects/jekyll-theme-primer/node_modules/primer-css",
+  "author": {
+    "name": "GitHub, Inc."
+  },
+  "bugs": {
+    "url": "https://github.com/primer/states/issues"
+  },
+  "dependencies": {
+    "primer-support": "*"
+  },
+  "description": "States, or state indicators, inform users of the current status of a particular item.",
+  "devDependencies": {
+    "autoprefixer": "^6.3.6",
+    "node-sass": "^3.7.0",
+    "postcss-cli": "^2.5.2",
+    "stylelint": "^7.0.3",
+    "stylelint-config-primer": "^1.1.0"
+  },
+  "directories": {},
+  "dist": {
+    "shasum": "3c5911e2a431b11dc02f53e3c267fd1f63a074c7",
+    "tarball": "https://registry.npmjs.org/primer-states/-/primer-states-0.3.0.tgz"
+  },
+  "files": [
+    "index.scss",
+    "lib",
+    "build"
+  ],
+  "gitHead": "8a0424fb400ad6cda590af0cc0a3537c743be49f",
+  "homepage": "http://primercss.io/",
+  "keywords": [
+    "primer",
+    "css",
+    "github",
+    "primercss"
+  ],
+  "license": "MIT",
+  "maintainers": [
+    {
+      "name": "jonrohan",
+      "email": "yes@jonrohan.codes"
+    }
+  ],
+  "name": "primer-states",
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/primer/states.git"
+  },
+  "scripts": {
+    "build": "node-sass index.scss --include-path node_modules --output-style compressed | postcss -c .postcss.json -o build/build.css",
+    "prepublish": "npm run setup && npm run build",
+    "setup": "if [ ! -d \"node_modules\" ]; then npm install; fi",
+    "test": "npm run build && stylelint **/*.scss -c .stylelintrc.json -s scss"
+  },
+  "style": "index.scss",
+  "version": "0.3.0"
+}

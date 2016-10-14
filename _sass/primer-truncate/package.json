@@ -1,0 +1,106 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "primer-truncate@*",
+        "scope": null,
+        "escapedName": "primer-truncate",
+        "name": "primer-truncate",
+        "rawSpec": "*",
+        "spec": "*",
+        "type": "range"
+      },
+      "/Users/benbalter/projects/jekyll-theme-primer/node_modules/primer-css"
+    ]
+  ],
+  "_from": "primer-truncate@*",
+  "_id": "primer-truncate@0.2.4",
+  "_inCache": true,
+  "_location": "/primer-truncate",
+  "_nodeVersion": "5.12.0",
+  "_npmOperationalInternal": {
+    "host": "packages-12-west.internal.npmjs.com",
+    "tmp": "tmp/primer-truncate-0.2.4.tgz_1471631230790_0.6683364203199744"
+  },
+  "_npmUser": {
+    "name": "jonrohan",
+    "email": "yes@jonrohan.codes"
+  },
+  "_npmVersion": "3.8.6",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "primer-truncate@*",
+    "scope": null,
+    "escapedName": "primer-truncate",
+    "name": "primer-truncate",
+    "rawSpec": "*",
+    "spec": "*",
+    "type": "range"
+  },
+  "_requiredBy": [
+    "/primer-css"
+  ],
+  "_resolved": "https://registry.npmjs.org/primer-truncate/-/primer-truncate-0.2.4.tgz",
+  "_shasum": "e1f5e76dba5d172d130bdcc4d54ae033c30a698c",
+  "_shrinkwrap": null,
+  "_spec": "primer-truncate@*",
+  "_where": "/Users/benbalter/projects/jekyll-theme-primer/node_modules/primer-css",
+  "author": {
+    "name": "GitHub, Inc."
+  },
+  "bugs": {
+    "url": "https://github.com/primer/truncate/issues"
+  },
+  "dependencies": {},
+  "description": "Shorten text with an ellipsis.",
+  "devDependencies": {
+    "autoprefixer": "^6.3.6",
+    "node-sass": "^3.7.0",
+    "postcss-cli": "^2.5.2",
+    "stylelint": "^7.0.3",
+    "stylelint-config-primer": "^1.1.0"
+  },
+  "directories": {},
+  "dist": {
+    "shasum": "e1f5e76dba5d172d130bdcc4d54ae033c30a698c",
+    "tarball": "https://registry.npmjs.org/primer-truncate/-/primer-truncate-0.2.4.tgz"
+  },
+  "files": [
+    "index.scss",
+    "lib",
+    "build"
+  ],
+  "gitHead": "eb38514cca04be3e8ce1c763af00808d02f17fdf",
+  "homepage": "http://primercss.io/",
+  "keywords": [
+    "primer",
+    "css",
+    "github",
+    "primercss",
+    "truncate",
+    "ellipsis",
+    "text"
+  ],
+  "license": "MIT",
+  "maintainers": [
+    {
+      "name": "jonrohan",
+      "email": "yes@jonrohan.codes"
+    }
+  ],
+  "name": "primer-truncate",
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/primer/truncate.git"
+  },
+  "scripts": {
+    "build": "node-sass index.scss --include-path node_modules --output-style compressed | postcss -c .postcss.json -o build/build.css",
+    "prepublish": "npm run setup && npm run build",
+    "setup": "if [ ! -d \"node_modules\" ]; then npm install; fi",
+    "test": "npm run build && stylelint **/*.scss -c .stylelintrc.json -s scss"
+  },
+  "style": "index.scss",
+  "version": "0.2.4"
+}

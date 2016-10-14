@@ -1,0 +1,108 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "primer-utilities@*",
+        "scope": null,
+        "escapedName": "primer-utilities",
+        "name": "primer-utilities",
+        "rawSpec": "*",
+        "spec": "*",
+        "type": "range"
+      },
+      "/Users/benbalter/projects/jekyll-theme-primer/node_modules/primer-css"
+    ]
+  ],
+  "_from": "primer-utilities@*",
+  "_id": "primer-utilities@1.0.0",
+  "_inCache": true,
+  "_location": "/primer-utilities",
+  "_nodeVersion": "5.12.0",
+  "_npmOperationalInternal": {
+    "host": "packages-16-east.internal.npmjs.com",
+    "tmp": "tmp/primer-utilities-1.0.0.tgz_1472778584897_0.8824154585599899"
+  },
+  "_npmUser": {
+    "name": "jonrohan",
+    "email": "yes@jonrohan.codes"
+  },
+  "_npmVersion": "3.8.6",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "primer-utilities@*",
+    "scope": null,
+    "escapedName": "primer-utilities",
+    "name": "primer-utilities",
+    "rawSpec": "*",
+    "spec": "*",
+    "type": "range"
+  },
+  "_requiredBy": [
+    "/primer-css"
+  ],
+  "_resolved": "https://registry.npmjs.org/primer-utilities/-/primer-utilities-1.0.0.tgz",
+  "_shasum": "4b347a11315304cd5bc04c4f742b0147ea6cd9af",
+  "_shrinkwrap": null,
+  "_spec": "primer-utilities@*",
+  "_where": "/Users/benbalter/projects/jekyll-theme-primer/node_modules/primer-css",
+  "author": {
+    "name": "GitHub, Inc."
+  },
+  "bugs": {
+    "url": "https://github.com/primer/utilities/issues"
+  },
+  "dependencies": {
+    "primer-support": "*"
+  },
+  "description": "Immutable, atomic CSS classes to rapidly build product",
+  "devDependencies": {
+    "autoprefixer": "^6.3.6",
+    "cssstats-cli": "^1.0.0-beta.2",
+    "node-sass": "^3.7.0",
+    "postcss-cli": "^2.5.2",
+    "stylelint": "^7.0.3",
+    "stylelint-config-primer": "^1.1.0"
+  },
+  "directories": {},
+  "dist": {
+    "shasum": "4b347a11315304cd5bc04c4f742b0147ea6cd9af",
+    "tarball": "https://registry.npmjs.org/primer-utilities/-/primer-utilities-1.0.0.tgz"
+  },
+  "files": [
+    "index.scss",
+    "lib",
+    "build"
+  ],
+  "gitHead": "33cf5f9a78516e33f6a0bd9715a44d46465c5e25",
+  "homepage": "http://primercss.io/",
+  "keywords": [
+    "primer",
+    "css",
+    "github",
+    "primercss"
+  ],
+  "license": "MIT",
+  "main": "build/index.js",
+  "maintainers": [
+    {
+      "name": "jonrohan",
+      "email": "yes@jonrohan.codes"
+    }
+  ],
+  "name": "primer-utilities",
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/primer/utilities.git"
+  },
+  "scripts": {
+    "build": "node-sass index.scss --include-path node_modules --output-style compressed | postcss -c .postcss.json -o build/build.css",
+    "prepublish": "npm run setup && npm run build && npm run stats",
+    "setup": "if [ ! -d \"node_modules\" ]; then npm install; fi",
+    "stats": "(echo \"module.exports = { 'cssstats': \" && cssstats build/build.css && echo \"}\") > build/index.js",
+    "test": "npm run build && stylelint **/*.scss -c .stylelintrc.json -s scss"
+  },
+  "style": "index.scss",
+  "version": "1.0.0"
+}

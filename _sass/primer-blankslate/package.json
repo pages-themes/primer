@@ -1,0 +1,106 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "primer-blankslate@*",
+        "scope": null,
+        "escapedName": "primer-blankslate",
+        "name": "primer-blankslate",
+        "rawSpec": "*",
+        "spec": "*",
+        "type": "range"
+      },
+      "/Users/benbalter/projects/jekyll-theme-primer/node_modules/primer-css"
+    ]
+  ],
+  "_from": "primer-blankslate@*",
+  "_id": "primer-blankslate@0.2.4",
+  "_inCache": true,
+  "_location": "/primer-blankslate",
+  "_nodeVersion": "5.12.0",
+  "_npmOperationalInternal": {
+    "host": "packages-12-west.internal.npmjs.com",
+    "tmp": "tmp/primer-blankslate-0.2.4.tgz_1471631004131_0.15656163753010333"
+  },
+  "_npmUser": {
+    "name": "jonrohan",
+    "email": "yes@jonrohan.codes"
+  },
+  "_npmVersion": "3.8.6",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "primer-blankslate@*",
+    "scope": null,
+    "escapedName": "primer-blankslate",
+    "name": "primer-blankslate",
+    "rawSpec": "*",
+    "spec": "*",
+    "type": "range"
+  },
+  "_requiredBy": [
+    "/primer-css"
+  ],
+  "_resolved": "https://registry.npmjs.org/primer-blankslate/-/primer-blankslate-0.2.4.tgz",
+  "_shasum": "d9aa7f2b0cdd1418c0b27b946fbb6873503123df",
+  "_shrinkwrap": null,
+  "_spec": "primer-blankslate@*",
+  "_where": "/Users/benbalter/projects/jekyll-theme-primer/node_modules/primer-css",
+  "author": {
+    "name": "GitHub, Inc."
+  },
+  "bugs": {
+    "url": "https://github.com/primer/blankslate/issues"
+  },
+  "dependencies": {},
+  "description": "Blankslates are for when there is a lack of content within a page or section.",
+  "devDependencies": {
+    "autoprefixer": "^6.3.6",
+    "node-sass": "^3.7.0",
+    "postcss-cli": "^2.5.2",
+    "stylelint": "^7.0.3",
+    "stylelint-config-primer": "^1.1.0"
+  },
+  "directories": {},
+  "dist": {
+    "shasum": "d9aa7f2b0cdd1418c0b27b946fbb6873503123df",
+    "tarball": "https://registry.npmjs.org/primer-blankslate/-/primer-blankslate-0.2.4.tgz"
+  },
+  "files": [
+    "index.scss",
+    "lib",
+    "build"
+  ],
+  "gitHead": "ec9effde0eefd0e7840f8f05d297252b580ca073",
+  "homepage": "http://primercss.io/",
+  "keywords": [
+    "primer",
+    "css",
+    "github",
+    "primercss",
+    "blankslate",
+    "empty",
+    "content"
+  ],
+  "license": "MIT",
+  "maintainers": [
+    {
+      "name": "jonrohan",
+      "email": "yes@jonrohan.codes"
+    }
+  ],
+  "name": "primer-blankslate",
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/primer/blankslate.git"
+  },
+  "scripts": {
+    "build": "node-sass index.scss --include-path node_modules --output-style compressed | postcss -c .postcss.json -o build/build.css",
+    "prepublish": "npm run setup && npm run build",
+    "setup": "if [ ! -d \"node_modules\" ]; then npm install; fi",
+    "test": "npm run build && stylelint **/*.scss -c .stylelintrc.json -s scss"
+  },
+  "style": "index.scss",
+  "version": "0.2.4"
+}

@@ -1,0 +1,8 @@
+#!/bin/sh
+# Test that the darn thing actually builds
+
+set -e
+
+script/build
+bundle exec rubocop -D -S
+gem build jekyll-theme-primer.gemspec

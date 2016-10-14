@@ -1,0 +1,106 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "primer-avatars@*",
+        "scope": null,
+        "escapedName": "primer-avatars",
+        "name": "primer-avatars",
+        "rawSpec": "*",
+        "spec": "*",
+        "type": "range"
+      },
+      "/Users/benbalter/projects/jekyll-theme-primer/node_modules/primer-css"
+    ]
+  ],
+  "_from": "primer-avatars@*",
+  "_id": "primer-avatars@0.2.4",
+  "_inCache": true,
+  "_location": "/primer-avatars",
+  "_nodeVersion": "5.12.0",
+  "_npmOperationalInternal": {
+    "host": "packages-12-west.internal.npmjs.com",
+    "tmp": "tmp/primer-avatars-0.2.4.tgz_1471630938480_0.8342921298462898"
+  },
+  "_npmUser": {
+    "name": "jonrohan",
+    "email": "yes@jonrohan.codes"
+  },
+  "_npmVersion": "3.8.6",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "primer-avatars@*",
+    "scope": null,
+    "escapedName": "primer-avatars",
+    "name": "primer-avatars",
+    "rawSpec": "*",
+    "spec": "*",
+    "type": "range"
+  },
+  "_requiredBy": [
+    "/primer-css"
+  ],
+  "_resolved": "https://registry.npmjs.org/primer-avatars/-/primer-avatars-0.2.4.tgz",
+  "_shasum": "3b159b0f36680bbd53de0b80a18847a0e94900b9",
+  "_shrinkwrap": null,
+  "_spec": "primer-avatars@*",
+  "_where": "/Users/benbalter/projects/jekyll-theme-primer/node_modules/primer-css",
+  "author": {
+    "name": "GitHub, Inc."
+  },
+  "bugs": {
+    "url": "https://github.com/primer/avatars/issues"
+  },
+  "dependencies": {
+    "primer-support": "*"
+  },
+  "description": "Basic styles for user profile avatars.",
+  "devDependencies": {
+    "autoprefixer": "^6.3.6",
+    "node-sass": "^3.7.0",
+    "postcss-cli": "^2.5.2",
+    "stylelint": "^7.0.3",
+    "stylelint-config-primer": "^1.1.0"
+  },
+  "directories": {},
+  "dist": {
+    "shasum": "3b159b0f36680bbd53de0b80a18847a0e94900b9",
+    "tarball": "https://registry.npmjs.org/primer-avatars/-/primer-avatars-0.2.4.tgz"
+  },
+  "files": [
+    "index.scss",
+    "lib",
+    "build"
+  ],
+  "gitHead": "da284be4f8c9fc4ecb9f05c836f807f1d72d1222",
+  "homepage": "http://primercss.io/",
+  "keywords": [
+    "avatars",
+    "primer",
+    "css",
+    "github",
+    "primercss"
+  ],
+  "license": "MIT",
+  "maintainers": [
+    {
+      "name": "jonrohan",
+      "email": "yes@jonrohan.codes"
+    }
+  ],
+  "name": "primer-avatars",
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/primer/avatars.git"
+  },
+  "scripts": {
+    "build": "node-sass index.scss --include-path node_modules --output-style compressed | postcss -c .postcss.json -o build/build.css",
+    "prepublish": "npm run setup && npm run build",
+    "setup": "if [ ! -d \"node_modules\" ]; then npm install; fi",
+    "test": "npm run build && stylelint **/*.scss -c .stylelintrc.json -s scss"
+  },
+  "style": "index.scss",
+  "version": "0.2.4"
+}

@@ -1,0 +1,45 @@
+// Color utilities
+// stylelint-disable block-opening-brace-space-before, block-closing-brace-newline-before, block-opening-brace-newline-after, selector-list-comma-newline-after, block-opening-brace-space-after, primer/selector-no-utility, rule-non-nested-empty-line-before
+
+// background colors
+.bg-white      { background-color: $bg-white !important; }
+.bg-blue       { background-color: $bg-blue !important; }
+.bg-blue-light { background-color: $bg-blue-light !important; }
+.bg-gray-dark  { background-color: $bg-gray-dark !important; }
+.bg-gray       { background-color: $bg-gray !important; }
+.bg-gray-light { background-color: $bg-gray-light !important; }
+.bg-green      { background-color: $bg-green !important; }
+.bg-red        { background-color: $bg-red !important; }
+
+// text colors
+.text-blue          { color: $text-blue !important; }
+.text-red           { color: $text-red !important; }
+.text-gray-light    { color: $text-gray-light !important; }
+.text-gray          { color: $text-gray !important; }
+.text-gray-dark     { color: $text-gray-dark !important; }
+.text-green         { color: $text-green !important; }
+.text-orange        { color: $text-orange !important; }
+.text-purple        { color: $text-purple !important; }
+.text-white         { color: $text-white !important; }
+.text-inherit       { color: inherit !important; }
+
+// link colors
+.link-blue      { color: $text-blue !important; }
+.link-gray-dark { color: $text-gray-dark !important; }
+.link-gray      { color: $text-gray !important; }
+
+// Text states
+.text-renamed { color: $status-renamed !important; }
+.text-pending { color: $status-pending !important; }
+
+// Muted link
+//
+// Have a link you need to be gray to start, and blue on hover? Use this.
+.muted-link {
+  color: $text-gray !important;
+
+  &:hover {
+    color: $text-blue !important;
+    text-decoration: none;
+  }
+}

@@ -1,0 +1,6 @@
+#!/bin/sh
+# Bootstrap Ruby dependencies
+
+set -e
+
+bundle install

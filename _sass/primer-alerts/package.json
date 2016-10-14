@@ -1,0 +1,109 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "primer-alerts@*",
+        "scope": null,
+        "escapedName": "primer-alerts",
+        "name": "primer-alerts",
+        "rawSpec": "*",
+        "spec": "*",
+        "type": "range"
+      },
+      "/Users/benbalter/projects/jekyll-theme-primer/node_modules/primer-css"
+    ]
+  ],
+  "_from": "primer-alerts@*",
+  "_id": "primer-alerts@0.3.1",
+  "_inCache": true,
+  "_location": "/primer-alerts",
+  "_nodeVersion": "5.12.0",
+  "_npmOperationalInternal": {
+    "host": "packages-12-west.internal.npmjs.com",
+    "tmp": "tmp/primer-alerts-0.3.1.tgz_1471630924471_0.8657496881205589"
+  },
+  "_npmUser": {
+    "name": "jonrohan",
+    "email": "yes@jonrohan.codes"
+  },
+  "_npmVersion": "3.8.6",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "primer-alerts@*",
+    "scope": null,
+    "escapedName": "primer-alerts",
+    "name": "primer-alerts",
+    "rawSpec": "*",
+    "spec": "*",
+    "type": "range"
+  },
+  "_requiredBy": [
+    "/primer-css"
+  ],
+  "_resolved": "https://registry.npmjs.org/primer-alerts/-/primer-alerts-0.3.1.tgz",
+  "_shasum": "f8483d491bd44551051bcff9f023a2a9e3a8b79a",
+  "_shrinkwrap": null,
+  "_spec": "primer-alerts@*",
+  "_where": "/Users/benbalter/projects/jekyll-theme-primer/node_modules/primer-css",
+  "author": {
+    "name": "GitHub, Inc."
+  },
+  "bugs": {
+    "url": "https://github.com/primer/alerts/issues"
+  },
+  "dependencies": {
+    "primer-support": "*"
+  },
+  "description": "Flash messages, or alerts, inform users of successful or pending actions.",
+  "devDependencies": {
+    "autoprefixer": "^6.3.6",
+    "node-sass": "^3.7.0",
+    "postcss-cli": "^2.5.2",
+    "stylelint": "^7.0.3",
+    "stylelint-config-primer": "^1.1.0"
+  },
+  "directories": {},
+  "dist": {
+    "shasum": "f8483d491bd44551051bcff9f023a2a9e3a8b79a",
+    "tarball": "https://registry.npmjs.org/primer-alerts/-/primer-alerts-0.3.1.tgz"
+  },
+  "files": [
+    "index.scss",
+    "lib",
+    "build"
+  ],
+  "gitHead": "4c573a6d14cfbc03c16f0bbec38fde26d89f2388",
+  "homepage": "http://primercss.io/",
+  "keywords": [
+    "alerts",
+    "callouts",
+    "css",
+    "flash",
+    "github",
+    "primer",
+    "primercss",
+    "style"
+  ],
+  "license": "MIT",
+  "maintainers": [
+    {
+      "name": "jonrohan",
+      "email": "yes@jonrohan.codes"
+    }
+  ],
+  "name": "primer-alerts",
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/primer/alerts.git"
+  },
+  "scripts": {
+    "build": "node-sass index.scss --include-path node_modules --output-style compressed | postcss -c .postcss.json -o build/build.css",
+    "prepublish": "npm run setup && npm run build",
+    "setup": "if [ ! -d \"node_modules\" ]; then npm install; fi",
+    "test": "npm run build && stylelint **/*.scss -c .stylelintrc.json -s scss"
+  },
+  "style": "index.scss",
+  "version": "0.3.1"
+}

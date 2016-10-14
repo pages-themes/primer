@@ -1,0 +1,112 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "primer-support@*",
+        "scope": null,
+        "escapedName": "primer-support",
+        "name": "primer-support",
+        "rawSpec": "*",
+        "spec": "*",
+        "type": "range"
+      },
+      "/Users/benbalter/projects/jekyll-theme-primer/node_modules/primer-css"
+    ]
+  ],
+  "_from": "primer-support@*",
+  "_id": "primer-support@0.6.0",
+  "_inCache": true,
+  "_location": "/primer-support",
+  "_nodeVersion": "5.12.0",
+  "_npmOperationalInternal": {
+    "host": "packages-16-east.internal.npmjs.com",
+    "tmp": "tmp/primer-support-0.6.0.tgz_1471630919705_0.04082129243761301"
+  },
+  "_npmUser": {
+    "name": "jonrohan",
+    "email": "yes@jonrohan.codes"
+  },
+  "_npmVersion": "3.8.6",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "primer-support@*",
+    "scope": null,
+    "escapedName": "primer-support",
+    "name": "primer-support",
+    "rawSpec": "*",
+    "spec": "*",
+    "type": "range"
+  },
+  "_requiredBy": [
+    "/primer-alerts",
+    "/primer-avatars",
+    "/primer-base",
+    "/primer-buttons",
+    "/primer-css",
+    "/primer-forms",
+    "/primer-layout",
+    "/primer-markdown",
+    "/primer-navigation",
+    "/primer-states",
+    "/primer-tooltips",
+    "/primer-utilities"
+  ],
+  "_resolved": "https://registry.npmjs.org/primer-support/-/primer-support-0.6.0.tgz",
+  "_shasum": "94541399e16574f8aa618d9fc99746670782b2b2",
+  "_shrinkwrap": null,
+  "_spec": "primer-support@*",
+  "_where": "/Users/benbalter/projects/jekyll-theme-primer/node_modules/primer-css",
+  "author": {
+    "name": "GitHub, Inc."
+  },
+  "bugs": {
+    "url": "https://github.com/primer/support/issues"
+  },
+  "dependencies": {},
+  "description": "Sass variables, mixins, and functions for use in our components.",
+  "devDependencies": {
+    "stylelint": "^7.0.3",
+    "stylelint-config-primer": "^1.1.0"
+  },
+  "directories": {},
+  "dist": {
+    "shasum": "94541399e16574f8aa618d9fc99746670782b2b2",
+    "tarball": "https://registry.npmjs.org/primer-support/-/primer-support-0.6.0.tgz"
+  },
+  "files": [
+    "index.scss",
+    "lib"
+  ],
+  "gitHead": "21fd11825bf369bb82b4e19726e208f58ea79ab1",
+  "homepage": "http://primercss.io/",
+  "keywords": [
+    "primer",
+    "css",
+    "github",
+    "primercss",
+    "mixins",
+    "functions",
+    "variables",
+    "scss"
+  ],
+  "license": "MIT",
+  "maintainers": [
+    {
+      "name": "jonrohan",
+      "email": "yes@jonrohan.codes"
+    }
+  ],
+  "name": "primer-support",
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/primer/support.git"
+  },
+  "scripts": {
+    "lint": "stylelint **/*.scss -c .stylelintrc.json -s scss",
+    "test": "npm run lint"
+  },
+  "style": "index.scss",
+  "version": "0.6.0"
+}
