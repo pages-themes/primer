@@ -9,6 +9,10 @@
   "author": "Ben Balter",
   "license": "MIT",
   "dependencies": {
-    "primer-css": "^4.2.0"
+    "primer-base": "^0.3.0",
+    "primer-layout": "^0.2.4",
+    "primer-markdown": "^3.3.1",
+    "primer-support": "^0.6.0",
+    "primer-utilities": "^1.0.0"
   }
 }

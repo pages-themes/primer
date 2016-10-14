@@ -2,18 +2,18 @@
   "_args": [
     [
       {
-        "raw": "primer-markdown@*",
+        "raw": "primer-markdown@^3.3.1",
         "scope": null,
         "escapedName": "primer-markdown",
         "name": "primer-markdown",
-        "rawSpec": "*",
-        "spec": "*",
+        "rawSpec": "^3.3.1",
+        "spec": ">=3.3.1 <4.0.0",
         "type": "range"
       },
-      "/Users/benbalter/projects/jekyll-theme-primer/node_modules/primer-css"
+      "/Users/benbalter/projects/jekyll-theme-primer"
     ]
   ],
-  "_from": "primer-markdown@*",
+  "_from": "primer-markdown@>=3.3.1 <4.0.0",
   "_id": "primer-markdown@3.3.1",
   "_inCache": true,
   "_location": "/primer-markdown",
@@ -29,22 +29,22 @@
   "_npmVersion": "3.8.6",
   "_phantomChildren": {},
   "_requested": {
-    "raw": "primer-markdown@*",
+    "raw": "primer-markdown@^3.3.1",
     "scope": null,
     "escapedName": "primer-markdown",
     "name": "primer-markdown",
-    "rawSpec": "*",
-    "spec": "*",
+    "rawSpec": "^3.3.1",
+    "spec": ">=3.3.1 <4.0.0",
     "type": "range"
   },
   "_requiredBy": [
-    "/primer-css"
+    "/"
   ],
   "_resolved": "https://registry.npmjs.org/primer-markdown/-/primer-markdown-3.3.1.tgz",
   "_shasum": "163a337ddf15823baae9ea2043b228c404ce9e34",
   "_shrinkwrap": null,
-  "_spec": "primer-markdown@*",
-  "_where": "/Users/benbalter/projects/jekyll-theme-primer/node_modules/primer-css",
+  "_spec": "primer-markdown@^3.3.1",
+  "_where": "/Users/benbalter/projects/jekyll-theme-primer",
   "author": {
     "name": "GitHub, Inc."
   },
