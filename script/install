@@ -11,4 +11,7 @@ ln -s _sass node_modules
 mv -f _sass/normalize.css/normalize.css _sass/normalize.css/normalize.scss
 
 # Add our own theme scss file for consistency of naming in `assets/style.scss`
-echo '@import "primer-css/index.scss";' >> _sass/jekyll-theme-primer.scss
+echo '@import "primer-css/index.scss"; @import "rouge"' >> _sass/jekyll-theme-primer.scss
+
+# Create rouge stylesheet
+rougify style github > _sass/rouge.scss
