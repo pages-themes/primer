@@ -1,6 +1,6 @@
 #!/bin/sh
-# Bootstrap Ruby dependencies
 
 set -e
 
+gem install bundler
 bundle install
