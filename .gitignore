@@ -3,3 +3,4 @@ node_modules
 .sass-cache
 *.gem
 Gemfile.lock
+*.gem
