@@ -2,7 +2,7 @@ exclude:
   - node_modules
   - script
 
-theme: jekyll-theme-primer
+theme: 
 
 sass:
   style: :compressed
