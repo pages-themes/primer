@@ -13,7 +13,7 @@ Gem::Specification.new do |s|
   end
 
   s.platform      = Gem::Platform::RUBY
-  s.license       = "MIT"
+  s.license       = "None"
 
   s.add_dependency "jekyll", "~> 3.3"
   s.add_development_dependency "rubocop", "~> 0.40"
