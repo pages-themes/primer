@@ -3,10 +3,10 @@
 Gem::Specification.new do |s|
   s.name          = "jekyll-theme-primer"
   s.version       = "0.1.1"
-  s.authors       = ["Ben Balter"]
+  s.authors       = ["GitHub, Inc."]
   s.email         = ["open-source@github.com"]
   s.homepage      = "https://github.com/benbalter/jekyll-theme-primer"
-  s.summary       = "A Jekyll theme based on GitHub's Primer styles"
+  s.summary       = "Primer is a Jekyll theme for GitHub Pages based on GitHub's Primer styles"
 
   s.files         = `git ls-files -z`.split("\x0").select do |f|
     f.match(%r!^(assets|_(includes|layouts|sass)/|(LICENSE|README)((\.(txt|md)|$)))!i)
