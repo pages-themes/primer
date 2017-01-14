@@ -5,7 +5,7 @@ Gem::Specification.new do |s|
   s.version       = "0.1.6"
   s.authors       = ["GitHub, Inc."]
   s.email         = ["open-source@github.com"]
-  s.homepage      = "https://github.com/benbalter/jekyll-theme-primer"
+  s.homepage      = "https://github.com/pages-themes/jekyll-theme-primer"
   s.summary       = "Primer is a Jekyll theme for GitHub Pages based on GitHub's Primer styles"
 
   s.files         = `git ls-files -z`.split("\x0").select do |f|
