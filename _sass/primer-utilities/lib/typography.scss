@@ -1,4 +1,5 @@
-// stylelint-disable block-closing-brace-space-before, primer/selector-no-utility, selector-list-comma-newline-after, declaration-block-semicolon-newline-after, declaration-block-single-line-max-declarations
+// stylelint-disable block-closing-brace-space-before, primer/selector-no-utility, selector-list-comma-newline-after
+// stylelint-disable comment-empty-line-before
 // Type scale variables found in primer-support/lib/variables.scss
 // $h00-size: 48px;
 // $h0-size: 40px;
@@ -9,9 +10,7 @@
 // $h5-size: 14px;
 // $h6-size: 12px;
 
-// Heading utilities
-.h1, .h2, .h3, .h4, .h5, .h6 { font-weight: $font-weight-bold !important; }
-
+/* Set the font size to 26px */
 .h1 {
   font-size: 26px !important;
 
@@ -19,12 +18,14 @@
 
 }
 
+/* Set the font size to 22px */
 .h2 {
   font-size: 22px !important;
 
   @include breakpoint(md) { font-size: $h2-size !important; }
 }
 
+/* Set the font size to 18px */
 .h3 {
   font-size: 18px !important;
 
@@ -32,20 +33,27 @@
 
 }
 
+/* Set the font size to #{$h4-size} */
 .h4 {
-  font-size: 16px !important;
+  font-size: $h4-size !important;
 
   @include breakpoint(md) { font-size: $h4-size !important; }
 
 }
 
+/* Set the font size to #{$h5-size} */
 .h5 { font-size: $h5-size !important; }
 
 // Does not include color property like typography base
 // styles, color should be applied with color utilities.
+/* Set the font size to #{$h6-size} */
 .h6 { font-size: $h6-size !important; }
 
+// Heading utilities
+.h1, .h2, .h3, .h4, .h5, .h6 { font-weight: $font-weight-bold !important; }
+
 // Type utilities that match type sale
+/* Set the font size to 26px */
 .f1 {
   font-size: 26px !important;
 
@@ -53,12 +61,14 @@
 
 }
 
+/* Set the font size to 22px */
 .f2 {
   font-size: 22px !important;
 
   @include breakpoint(md) { font-size: $h2-size !important; }
 }
 
+/* Set the font size to 18px */
 .f3 {
   font-size: 18px !important;
 
@@ -66,17 +76,21 @@
 
 }
 
+/* Set the font size to #{$h4-size} */
 .f4 {
-  font-size: 16px !important;
+  font-size: $h4-size !important;
 
   @include breakpoint(md) { font-size: $h4-size !important; }
 
 }
 
+/* Set the font size to #{$h5-size} */
 .f5 { font-size: $h5-size !important; }
+/* Set the font size to #{$h6-size} */
 .f6 { font-size: $h6-size !important; }
 
 // Type utils with light weight that match type scale
+/* Set the font size to 40px and weight to light */
 .f00-light {
   font-size: 40px !important;
   font-weight: $font-weight-light !important;
@@ -85,6 +99,7 @@
 
 }
 
+/* Set the font size to 32px and weight to light */
 .f0-light {
   font-size: 32px !important;
   font-weight: $font-weight-light !important;
@@ -93,6 +108,7 @@
 
 }
 
+/* Set the font size to 26px and weight to light */
 .f1-light {
   font-size: 26px !important;
   font-weight: $font-weight-light !important;
@@ -101,6 +117,7 @@
 
 }
 
+/* Set the font size to 22px and weight to light */
 .f2-light {
   font-size: 22px !important;
   font-weight: $font-weight-light !important;
@@ -109,6 +126,7 @@
 
 }
 // Same size and weight as .lead but without color property
+/* Set the font size to 18px and weight to light */
 .f3-light {
   font-size: 18px !important;
   font-weight: $font-weight-light !important;
@@ -118,9 +136,10 @@
 }
 
 // Smallest text size
+/* Set the font size to ${#h6-size} */
 .text-small { font-size: $h6-size !important; } // 12px
 
-// Large leading paragraphs
+/* Large leading paragraphs */
 .lead {
   margin-bottom: 30px;
   font-size: $h3-size;
@@ -132,24 +151,61 @@
 // Close to commonly used line-heights. Most line-heights
 // combined with type size equate to whole pixels.
 // Will be improved with future typography scale updates.
+/* Set the line height to ultra condensed */
 .lh-condensed-ultra { line-height: $lh-condensed-ultra !important; }
+/* Set the line height to condensed */
 .lh-condensed { line-height: $lh-condensed !important; }
+/* Set the line height to default */
 .lh-default { line-height: $lh-default !important; }
 
 // Text alignments
+/* Text align to the right */
 .text-right { text-align: right !important; }
+/* Text align to the left */
 .text-left { text-align: left !important; }
+/* Text align to the center */
 .text-center { text-align: center !important; }
 
+// Responsive text alignment
+// .text-md-left, .text-lg-right, ...
+@each $breakpoint in map-keys($breakpoints) {
+  @include breakpoint($breakpoint) {
+    .text-#{$breakpoint}-right { text-align: right !important; }
+    .text-#{$breakpoint}-left { text-align: left !important; }
+    .text-#{$breakpoint}-center { text-align: center !important; }
+  }
+}
+
 // Text styles
+/* Set the font weight to normal */
 .text-normal { font-weight: normal !important; }
+/* Set the font weight to bold */
 .text-bold { font-weight: $font-weight-bold !important;}
-.text-italic { font-style: italic !important;}
+/* Set the font to italic */
+.text-italic { font-style: italic !important; }
+/* Make text uppercase */
 .text-uppercase { text-transform: uppercase !important; }
+/* Underline text */
 .no-underline { text-decoration: none !important; }
-.no-wrap { white-space: nowrap !important;}
+/* Don't wrap white space */
+.no-wrap { white-space: nowrap !important; }
+/* Allow long lines with no spaces to line break */
+.wb-break-all { word-break: break-all !important; }
 
 .text-emphasized {
   font-weight: $font-weight-bold;
   color: $text-gray-dark;
+}
+
+// List styles
+.list-style-none { list-style: none !important; }
+
+// Text Shadows
+/* Add a dark text shadow */
+.text-shadow-dark {
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.25), 0 1px 25px rgba(0, 0, 0, 0.75);
+}
+/* Add a light text shadow */
+.text-shadow-light {
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
 }

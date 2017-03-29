@@ -1,3 +1,4 @@
+// stylelint-disable
 /*! normalize.css v4.1.1 | MIT License | github.com/necolas/normalize.css */
 
 /**
@@ -38,9 +39,12 @@ header,
 main, /* 2 */
 menu,
 nav,
-section,
-summary { /* 1 */
+section { /* 1 */
   display: block;
+}
+
+summary {
+  display: list-item;
 }
 
 /**

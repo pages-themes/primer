@@ -2,75 +2,76 @@
   "_args": [
     [
       {
-        "raw": "primer-support@^0.6.0",
+        "raw": "primer-support@3.0.2",
         "scope": null,
         "escapedName": "primer-support",
         "name": "primer-support",
-        "rawSpec": "^0.6.0",
-        "spec": ">=0.6.0 <0.7.0",
-        "type": "range"
+        "rawSpec": "3.0.2",
+        "spec": "3.0.2",
+        "type": "version"
       },
-      "/Users/benbalter/projects/jekyll-theme-primer"
+      "/Users/benbalter/projects/primer"
     ]
   ],
-  "_from": "primer-support@>=0.6.0 <0.7.0",
-  "_id": "primer-support@0.6.0",
+  "_from": "primer-support@3.0.2",
+  "_id": "primer-support@3.0.2",
   "_inCache": true,
   "_location": "/primer-support",
-  "_nodeVersion": "5.12.0",
+  "_nodeVersion": "7.7.3",
   "_npmOperationalInternal": {
-    "host": "packages-16-east.internal.npmjs.com",
-    "tmp": "tmp/primer-support-0.6.0.tgz_1471630919705_0.04082129243761301"
+    "host": "packages-18-east.internal.npmjs.com",
+    "tmp": "tmp/primer-support-3.0.2.tgz_1490129546696_0.985271300887689"
   },
   "_npmUser": {
     "name": "jonrohan",
     "email": "yes@jonrohan.codes"
   },
-  "_npmVersion": "3.8.6",
+  "_npmVersion": "4.1.2",
   "_phantomChildren": {},
   "_requested": {
-    "raw": "primer-support@^0.6.0",
+    "raw": "primer-support@3.0.2",
     "scope": null,
     "escapedName": "primer-support",
     "name": "primer-support",
-    "rawSpec": "^0.6.0",
-    "spec": ">=0.6.0 <0.7.0",
-    "type": "range"
+    "rawSpec": "3.0.2",
+    "spec": "3.0.2",
+    "type": "version"
   },
   "_requiredBy": [
+    "#USER",
     "/",
     "/primer-base",
     "/primer-layout",
     "/primer-markdown",
     "/primer-utilities"
   ],
-  "_resolved": "https://registry.npmjs.org/primer-support/-/primer-support-0.6.0.tgz",
-  "_shasum": "94541399e16574f8aa618d9fc99746670782b2b2",
+  "_resolved": "https://registry.npmjs.org/primer-support/-/primer-support-3.0.2.tgz",
+  "_shasum": "53ab794dc7e492e66f60f3bae73c92ab0c030537",
   "_shrinkwrap": null,
-  "_spec": "primer-support@^0.6.0",
-  "_where": "/Users/benbalter/projects/jekyll-theme-primer",
+  "_spec": "primer-support@3.0.2",
+  "_where": "/Users/benbalter/projects/primer",
   "author": {
     "name": "GitHub, Inc."
   },
   "bugs": {
-    "url": "https://github.com/primer/support/issues"
+    "url": "https://github.com/primer/primer-support/issues"
   },
   "dependencies": {},
   "description": "Sass variables, mixins, and functions for use in our components.",
   "devDependencies": {
-    "stylelint": "^7.0.3",
-    "stylelint-config-primer": "^1.1.0"
+    "stylelint": "*",
+    "stylelint-config-primer": "*"
   },
   "directories": {},
   "dist": {
-    "shasum": "94541399e16574f8aa618d9fc99746670782b2b2",
-    "tarball": "https://registry.npmjs.org/primer-support/-/primer-support-0.6.0.tgz"
+    "shasum": "53ab794dc7e492e66f60f3bae73c92ab0c030537",
+    "tarball": "https://registry.npmjs.org/primer-support/-/primer-support-3.0.2.tgz"
   },
   "files": [
     "index.scss",
     "lib"
   ],
-  "gitHead": "21fd11825bf369bb82b4e19726e208f58ea79ab1",
+  "gitHead": "ae5852f055eb5fb9ec8ff143e0897e059e89124d",
   "homepage": "http://primercss.io/",
   "keywords": [
     "primer",
@@ -85,6 +86,10 @@
   "license": "MIT",
   "maintainers": [
     {
+      "name": "broccolini",
+      "email": "diana.mounter@gmail.com"
+    },
+    {
       "name": "jonrohan",
       "email": "yes@jonrohan.codes"
     }
@@ -94,12 +99,11 @@
   "readme": "ERROR: No README data found!",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/primer/support.git"
+    "url": "git+https://github.com/primer/primer-support.git"
   },
   "scripts": {
-    "lint": "stylelint **/*.scss -c .stylelintrc.json -s scss",
-    "test": "npm run lint"
+    "test": "stylelint **/*.scss -c .stylelintrc.json -s scss"
   },
   "style": "index.scss",
-  "version": "0.6.0"
+  "version": "3.0.2"
 }

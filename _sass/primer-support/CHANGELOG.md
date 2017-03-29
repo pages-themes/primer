@@ -1,3 +1,88 @@
+# v3.0.2
+
+ * Bump all the version numbers for readme - Mu-An Chiou [github/github@a9d152f](https://github.com/github/github/commit/a9d152f)
+ * Fix all the travis badge URL - Mu-An Chiou [github/github@9cd6d84](https://github.com/github/github/commit/9cd6d84)
+
+# v3.0.1
+
+ * bump version after adding variable - broccolini [github/github@7eeeed5](https://github.com/github/github/commit/7eeeed5)
+ * add yellow border variable to replace old flash border variable - broccolini [github/github@6eb26ee](https://github.com/github/github/commit/6eb26ee)
+
+# v3.0.0
+
+ * bump major version due to renaming in support and utils - broccolini [github/github@85b48ab](https://github.com/github/github/commit/85b48ab)
+ * rename border variables - broccolini [github/github@0a580d5](https://github.com/github/github/commit/0a580d5)
+
+# v2.1.0
+
+ * versions - Sophie Shepherd [github/github@703a904](https://github.com/github/github/commit/703a904)
+ * @broccolini's feedback - Sophie Shepherd [github/github@f9699ef](https://github.com/github/github/commit/f9699ef)
+
+# v2.0.0
+
+ * Fix lint - Mu-An Chiou [github/github@5a4b3cb](https://github.com/github/github/commit/5a4b3cb)
+ * Change border-color back to default for -000 .btn as well - Mu-An Chiou [github/github@bf725a2](https://github.com/github/github/commit/bf725a2)
+ * fix lint errors - broccolini [github/github@c520fa4](https://github.com/github/github/commit/c520fa4)
+ * fix lints and add defaults to color system variables - broccolini [github/github@b7f5ed5](https://github.com/github/github/commit/b7f5ed5)
+ * update primer-core version number - broccolini [github/github@6846743](https://github.com/github/github/commit/6846743)
+ * more docs examples, restore gradients from @broccolini and then add additional overrides to prevent hover gradient from bleeding into active state - Mark Otto [github/github@c637891](https://github.com/github/github/commit/c637891)
+ * One more button redux - Mark Otto [github/github@0b7323a](https://github.com/github/github/commit/0b7323a)
+ * use one yellow for now for status-pending: - broccolini [github/github@9f3bd48](https://github.com/github/github/commit/9f3bd48)
+ * darken danger button border on hover - broccolini [github/github@74b68b1](https://github.com/github/github/commit/74b68b1)
+ * add inverse mixin for red button hover styles - broccolini [github/github@764c417](https://github.com/github/github/commit/764c417)
+ * fix default btn style selected state - broccolini [github/github@fa5706a](https://github.com/github/github/commit/fa5706a)
+ * btn fixes: - broccolini [github/github@d5c2110](https://github.com/github/github/commit/d5c2110)
+ * update commit css with new variables - broccolini [github/github@198d897](https://github.com/github/github/commit/198d897)
+ * lighten yellow-100 just a tiny little bit - broccolini [github/github@0c7f3c5](https://github.com/github/github/commit/0c7f3c5)
+ * make purple more blue and less yahoo - ba boom tish! - broccolini [github/github@2fa35bd](https://github.com/github/github/commit/2fa35bd)
+ * update border light utility to be darker: - broccolini [github/github@3711ba9](https://github.com/github/github/commit/3711ba9)
+ * update orange variables and docs - broccolini [github/github@ab6f263](https://github.com/github/github/commit/ab6f263)
+ * update status pending colors - broccolini [github/github@849b34e](https://github.com/github/github/commit/849b34e)
+ * replace instances of #ddd with variable in primer-core - broccolini [github/github@4a95523](https://github.com/github/github/commit/4a95523)
+ * update red variables in topics: - broccolini [github/github@33ea9b0](https://github.com/github/github/commit/33ea9b0)
+ * remove unused variables - broccolini [github/github@a4ca9e4](https://github.com/github/github/commit/a4ca9e4)
+ * update default gray variables with new variables - broccolini [github/github@db4e635](https://github.com/github/github/commit/db4e635)
+ * update form color variables to use black variable - broccolini [github/github@af4ab27](https://github.com/github/github/commit/af4ab27)
+ * make gray match blue hue - broccolini [github/github@e53fff7](https://github.com/github/github/commit/e53fff7)
+ * sneak in that sf mono life - Mark Otto [github/github@778a9e6](https://github.com/github/github/commit/778a9e6)
+
+# v1.2.2
+
+ * update version numbers for primer package with bold update - broccolini [github/github@5d3e089](https://github.com/github/github/commit/5d3e089)
+
+# v1.2.1
+
+ * More versions - Jon Rohan [github/github@e12ba2e](https://github.com/github/github/commit/e12ba2e)
+
+# v1.2.0
+
+ * Revving this per @jonrohan - Patrick Marsceill [github/github@331f0b1](https://github.com/github/github/commit/331f0b1)
+ * Consolidate variables - Patrick Marsceill [github/github@37ea8ac](https://github.com/github/github/commit/37ea8ac)
+ * Make shadow vars - Patrick Marsceill [github/github@93b2e11](https://github.com/github/github/commit/93b2e11)
+ * update bg-yellow variables - broccolini [github/github@79701f2](https://github.com/github/github/commit/79701f2)
+ * Moving - Jon Rohan [github/github@34d0849](https://github.com/github/github/commit/34d0849)
+ * Updates based on feedback - Jon Rohan [github/github@d3528f1](https://github.com/github/github/commit/d3528f1)
+ * Documenting current color utilities - Jon Rohan [github/github@46b5f85](https://github.com/github/github/commit/46b5f85)
+ * add border color variables - broccolini [github/github@42f0fc0](https://github.com/github/github/commit/42f0fc0)
+
+# v1.1.0
+
+ * updating the version number - Jon Rohan [github/github@db462e6](https://github.com/github/github/commit/db462e6)
+ * Updating spacer-6 from 48px to 40px - Jon Rohan [github/github@ae380d1](https://github.com/github/github/commit/ae380d1)
+ * updating lg breakpoint for use with new spacer-3 - Jon Rohan [github/github@f5baf52](https://github.com/github/github/commit/f5baf52)
+
+# v1.0.0
+
+ * Fix counter color on primary button - Patrick Marsceill [github/github@9089145](https://github.com/github/github/commit/9089145)
+ * Cutting new versions of primer modules - Jon Rohan [github/github@157f5ab](https://github.com/github/github/commit/157f5ab)
+ * remove old comment - Patrick Marsceill [github/github@794502e](https://github.com/github/github/commit/794502e)
+ * Defaulting variables to new formula, with hardcoded old values - Jon Rohan [github/github@1f12c54](https://github.com/github/github/commit/1f12c54)
+ * Updating spacer-2 to 8px - Jon Rohan [github/github@3f7fbaf](https://github.com/github/github/commit/3f7fbaf)
+ * Rename repository with prefix primer- - Jon Rohan [github/github@ec8774a](https://github.com/github/github/commit/ec8774a)
+ * Getting rid of as much as possible - Sophie Shepherd [github/github@e2e5de4](https://github.com/github/github/commit/e2e5de4)
+ * Make default box shadow a var and apply it to .box-shadow utility - Patrick Marsceill [github/github@bda03be](https://github.com/github/github/commit/bda03be)
+ * Separating out modules into primer-core and primer-product - Jon Rohan [github/github@ddf698c](https://github.com/github/github/commit/ddf698c)
+
 # v0.6.0
 
  * Updating version - Jon Rohan [github/github@6bf5fe5](https://github.com/github/github/commit/6bf5fe5)
