@@ -1,5 +1,5 @@
 // This file contains reusable animations for github.
-
+// stylelint-disable primer/selector-no-utility
 // Fade in
 // A class to fade in an element on the page.
 .anim-fade-in {
@@ -22,8 +22,7 @@
   }
 }
 
-// Fade up
-// A class that will fade in and slide up an element
+/* Fade in and slide up an element */
 .anim-fade-up {
   opacity: 0;
   animation-name: fade-up;
@@ -45,8 +44,7 @@
   }
 }
 
-// Fade down
-// A class that will fade an element out and slide down.
+/* Fade an element out and slide down */
 .anim-fade-down {
   animation-name: fade-down;
   animation-duration: 0.3s;
@@ -66,8 +64,7 @@
   }
 }
 
-// Grow X
-// A class that will grow an element width from 0 to 100%
+/* Grow an element width from 0 to 100% */
 .anim-grow-x {
   width: 0%;
   animation-name: grow-x;
@@ -81,8 +78,7 @@
   to { width: 100%; }
 }
 
-// Shrink X
-// A class that will shrink an element from 100% to 0%
+/* Shrink an element from 100% to 0% */
 .anim-shrink-x {
   animation-name: shrink-x;
   animation-duration: 0.3s;
@@ -95,8 +91,7 @@
   to { width: 0%; }
 }
 
-// Scale in
-// A class to fade in an element and scale it fast
+/* Fade in an element and scale it fast */
 .anim-scale-in {
   animation-name: scale-in;
   animation-duration: 0.15s;
@@ -115,6 +110,7 @@
   }
 }
 
+/* Pulse an element's opacity */
 .anim-pulse {
   animation-name: pulse;
   animation-duration: 2s;
@@ -136,6 +132,7 @@
   }
 }
 
+/* Pulse in an element */
 .anim-pulse-in {
   animation-name: pulse-in;
   animation-duration: 0.5s;

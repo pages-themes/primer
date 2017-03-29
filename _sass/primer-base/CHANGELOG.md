@@ -1,3 +1,23 @@
+# v0.4.2
+
+ * More versions - Jon Rohan [github/github@e12ba2e](https://github.com/github/github/commit/e12ba2e)
+ * Pointing main js file to build - Jon Rohan [github/github@3575651](https://github.com/github/github/commit/3575651)
+ * don't change the versions yet - Jon Rohan [github/github@6bebcff](https://github.com/github/github/commit/6bebcff)
+ * Bumping version - Jon Rohan [github/github@df8b91c](https://github.com/github/github/commit/df8b91c)
+ * Cleaning up devDependencies versions and simplifying npm scripts - Jon Rohan [github/github@2c42571](https://github.com/github/github/commit/2c42571)
+
+# v0.4.1
+
+ * Creating a new version - Jon Rohan [github/github@488569b](https://github.com/github/github/commit/488569b)
+ * Adding list-item for summary - Jon Rohan [github/github@59070d8](https://github.com/github/github/commit/59070d8)
+ * Removing normalize.css from dependencies and checking into base package - Jon Rohan [github/github@459e8b7](https://github.com/github/github/commit/459e8b7)
+
+# v0.4.0
+
+ * Cutting new versions of primer modules - Jon Rohan [github/github@157f5ab](https://github.com/github/github/commit/157f5ab)
+ * Rename repository with prefix primer- - Jon Rohan [github/github@ec8774a](https://github.com/github/github/commit/ec8774a)
+ * Separating out modules into primer-core and primer-product - Jon Rohan [github/github@ddf698c](https://github.com/github/github/commit/ddf698c)
+
 # v0.3.0
 
  * Updating version - Jon Rohan [github/github@6bf5fe5](https://github.com/github/github/commit/6bf5fe5)

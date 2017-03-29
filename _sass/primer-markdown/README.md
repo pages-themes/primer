@@ -1,7 +1,7 @@
 # Primer CSS Markdown
 
 [![NPM version](http://img.shields.io/npm/v/primer-markdown.svg)](https://www.npmjs.org/package/primer-markdown)
-[![Build Status](https://travis-ci.org/primer/markdown.svg?branch=master)](https://travis-ci.org/primer/markdown)
+[![Build Status](https://travis-ci.org/primer/primer-markdown.svg?branch=master)](https://travis-ci.org/primer/primer-markdown)
 
 > Stylesheets for rendering GitHub Flavored Markdown and syntax highlighted code snippets.
 
@@ -35,15 +35,10 @@ $ npm run build
 
 ## Documentation
 
-You can read more about other primer modules in the [full primer docs][docs].
-
 <!-- %docs
 title: Markdown
-homepage: https://github.com/primer/primer-markdown
 status: Stable
 -->
-
-### Markdown test document
 
 Text can be **bold**, _italic_, or ~~strikethrough~~. [Links](https://github.com) should be blue with no underlines (unless hovered over).
 

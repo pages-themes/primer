@@ -1,3 +1,32 @@
+# v3.3.6
+
+ * Bump all the version numbers for readme - Mu-An Chiou [github/github@a9d152f](https://github.com/github/github/commit/a9d152f)
+ * Fix all the travis badge URL - Mu-An Chiou [github/github@9cd6d84](https://github.com/github/github/commit/9cd6d84)
+
+# v3.3.5
+
+ * bump version numbers that were missed previously - broccolini [github/github@ee50553](https://github.com/github/github/commit/ee50553)
+ * update markdown primer-product module color variables - broccolini [github/github@ffe0fd7](https://github.com/github/github/commit/ffe0fd7)
+ * bg color transparent - Caleb Winters [github/github@d398e79](https://github.com/github/github/commit/d398e79)
+ * fix bg color css - Caleb Winters [github/github@e626139](https://github.com/github/github/commit/e626139)
+ * clean up selector - Caleb Winters [github/github@408bf5d](https://github.com/github/github/commit/408bf5d)
+ * only remove bg color on images in table row - Caleb Winters [github/github@e752a40](https://github.com/github/github/commit/e752a40)
+ * remove background-color css for markdown images - Caleb Winters [github/github@60b13f6](https://github.com/github/github/commit/60b13f6)
+
+# v3.3.3
+
+ * update version numbers for primer package with bold update - broccolini [github/github@5d3e089](https://github.com/github/github/commit/5d3e089)
+
+# v3.3.2
+
+ * bumping the version - Jon Rohan [github/github@4a72b25](https://github.com/github/github/commit/4a72b25)
+ * Pointing main js file to build - Jon Rohan [github/github@3575651](https://github.com/github/github/commit/3575651)
+ * don't change the versions yet - Jon Rohan [github/github@6bebcff](https://github.com/github/github/commit/6bebcff)
+ * Bumping version - Jon Rohan [github/github@df8b91c](https://github.com/github/github/commit/df8b91c)
+ * Cleaning up devDependencies versions and simplifying npm scripts - Jon Rohan [github/github@2c42571](https://github.com/github/github/commit/2c42571)
+ * Sorting and table objects. We also don't need homepage - Jon Rohan [github/github@798629d](https://github.com/github/github/commit/798629d)
+ * Removing duplicate headers - Jon Rohan [github/github@225cee1](https://github.com/github/github/commit/225cee1)
+
 # v3.3.1
 
  * Rename repository with prefix primer- - Jon Rohan [github/github@ec8774a](https://github.com/github/github/commit/ec8774a)

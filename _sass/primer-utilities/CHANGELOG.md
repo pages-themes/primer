@@ -1,3 +1,133 @@
+# v4.1.1
+
+ * Bump all the version numbers for readme - Mu-An Chiou [github/github@a9d152f](https://github.com/github/github/commit/a9d152f)
+ * Fix all the travis badge URL - Mu-An Chiou [github/github@9cd6d84](https://github.com/github/github/commit/9cd6d84)
+
+# v4.1.0
+
+
+# v4.0.3
+
+ * make  work as expected - Sophie Shepherd [github/github@6c85845](https://github.com/github/github/commit/6c85845)
+ * primer version & CHANGELOG - Sophie Shepherd [github/github@9011d3b](https://github.com/github/github/commit/9011d3b)
+ * clean up usage of shade-gradient - Sophie Shepherd [github/github@4097cbd](https://github.com/github/github/commit/4097cbd)
+ * Add border utility and update primer - Mu-An Chiou [github/github@6870d3f](https://github.com/github/github/commit/6870d3f)
+
+# v4.0.1
+
+ * add border utility - broccolini [github/github@026d0dc](https://github.com/github/github/commit/026d0dc)
+
+# v4.0.0
+
+ * bump major version due to renaming in support and utils - broccolini [github/github@85b48ab](https://github.com/github/github/commit/85b48ab)
+ * update and re-order docs - broccolini [github/github@17fd96f](https://github.com/github/github/commit/17fd96f)
+ * add black alpha transparent border utility - broccolini [github/github@56d224a](https://github.com/github/github/commit/56d224a)
+ * update border names in docs - broccolini [github/github@dc33e97](https://github.com/github/github/commit/dc33e97)
+ * rename border utilities to match variables - broccolini [github/github@d0fdfb3](https://github.com/github/github/commit/d0fdfb3)
+ * Bump version number and update changelog - Mu-An Chiou [github/github@050549f](https://github.com/github/github/commit/050549f)
+ * Remove negative margin it's causing scrollbar problem and we don't actually need it - Mu-An Chiou [github/github@d813007](https://github.com/github/github/commit/d813007)
+ * fix border blue colors - broccolini [github/github@957c87a](https://github.com/github/github/commit/957c87a)
+
+# v3.7.1
+
+ * @broccolini's feedback - Sophie Shepherd [github/github@f9699ef](https://github.com/github/github/commit/f9699ef)
+ * mdo's notes - Sophie Shepherd [github/github@bf6304c](https://github.com/github/github/commit/bf6304c)
+ * bump version numbers - broccolini [github/github@34165ea](https://github.com/github/github/commit/34165ea)
+ * decouple bg & text status pending colors and improve text contrast - broccolini [github/github@c541dca](https://github.com/github/github/commit/c541dca)
+
+# v3.7.0
+
+ * update primer-core version number - broccolini [github/github@6846743](https://github.com/github/github/commit/6846743)
+ * use one yellow for now for status-pending: - broccolini [github/github@9f3bd48](https://github.com/github/github/commit/9f3bd48)
+ * bump version number on color utilities - broccolini [github/github@a52c6c2](https://github.com/github/github/commit/a52c6c2)
+ * separate bg and text pending color - broccolini [github/github@2c285b7](https://github.com/github/github/commit/2c285b7)
+ * update shade-gradient to use variable - broccolini [github/github@c63acfd](https://github.com/github/github/commit/c63acfd)
+ * move this before responsive variants so we can override it by breakpoint - Mark Otto [github/github@e38f773](https://github.com/github/github/commit/e38f773)
+
+# v3.5.0
+
+ * package version bump and update changelog for styleguide - Mark Otto [github/github@84ffd6d](https://github.com/github/github/commit/84ffd6d)
+ * update comment for @pmarsceill - Mark Otto [github/github@b446760](https://github.com/github/github/commit/b446760)
+ * colors, buttons, and more - Mark Otto [github/github@307d8ce](https://github.com/github/github/commit/307d8ce)
+ * Bump version and update CHANGELOG - Mu-An Chiou [github/github@b4de751](https://github.com/github/github/commit/b4de751)
+ * Add focus guide button - Mu-An Chiou [github/github@2101e25](https://github.com/github/github/commit/2101e25)
+ * Add title and change button activation copy - Mu-An Chiou [github/github@35af0e4](https://github.com/github/github/commit/35af0e4)
+ * initial docs - Caleb Winters [github/github@7a576e5](https://github.com/github/github/commit/7a576e5)
+ * Add .sr-only doc - Mu-An Chiou [github/github@2068b05](https://github.com/github/github/commit/2068b05)
+ * Move .sr-only to  to cored utility and add sr-only logout button - Mu-An Chiou [github/github@0c1a73f](https://github.com/github/github/commit/0c1a73f)
+
+# v3.3.1
+
+ * bumping the version - Jon Rohan [github/github@4a72b25](https://github.com/github/github/commit/4a72b25)
+ * flexbug copy tweak - broccolini [github/github@6a4a4d2](https://github.com/github/github/commit/6a4a4d2)
+
+# v3.3.0
+
+ * Docs update - Patrick Marsceill [github/github@3acfa8e](https://github.com/github/github/commit/3acfa8e)
+ * Comma splice - Patrick Marsceill [github/github@754ae36](https://github.com/github/github/commit/754ae36)
+ * rip out box-shadows and use TOC not hard coded links - Patrick Marsceill [github/github@ba64689](https://github.com/github/github/commit/ba64689)
+ * Makd small default - Patrick Marsceill [github/github@fcebabb](https://github.com/github/github/commit/fcebabb)
+ * Tidy up the docs - Patrick Marsceill [github/github@04a5a9e](https://github.com/github/github/commit/04a5a9e)
+ * Update old classname in docs - Patrick Marsceill [github/github@9a905ba](https://github.com/github/github/commit/9a905ba)
+ * Use Box not utils for example - Patrick Marsceill [github/github@d10cba8](https://github.com/github/github/commit/d10cba8)
+ * Update page heading levels for toc - Patrick Marsceill [github/github@8ffa7ab](https://github.com/github/github/commit/8ffa7ab)
+ * Bump package version number - Patrick Marsceill [github/github@72e938a](https://github.com/github/github/commit/72e938a)
+ * Update docs - Patrick Marsceill [github/github@36be95e](https://github.com/github/github/commit/36be95e)
+ * Consolidate box-shadow styles - Patrick Marsceill [github/github@35cdd34](https://github.com/github/github/commit/35cdd34)
+ * Implement shadow vars - Patrick Marsceill [github/github@8f8aaf0](https://github.com/github/github/commit/8f8aaf0)
+ * add docs for flexbox bug - broccolini [github/github@ce472fc](https://github.com/github/github/commit/ce472fc)
+ * add flex-shrink utility to review status - broccolini [github/github@2ac6ae8](https://github.com/github/github/commit/2ac6ae8)
+ * bump version number - broccolini [github/github@903297b](https://github.com/github/github/commit/903297b)
+ * add imports for new partials - broccolini [github/github@bdfb45c](https://github.com/github/github/commit/bdfb45c)
+ * move flexbox styles into their own partial - broccolini [github/github@a82b8f3](https://github.com/github/github/commit/a82b8f3)
+ * move display and visibility utilities into separate partial - broccolini [github/github@bcb21b0](https://github.com/github/github/commit/bcb21b0)
+ * Disable selector-no-utility because this is the utility - Patrick Marsceill [github/github@d6871fb](https://github.com/github/github/commit/d6871fb)
+ * add new docs - Patrick Marsceill [github/github@704fd67](https://github.com/github/github/commit/704fd67)
+ * remove old documentation - Patrick Marsceill [github/github@449fb2a](https://github.com/github/github/commit/449fb2a)
+ * Move legacy box-shadow to new scss partial - Patrick Marsceill [github/github@89bca94](https://github.com/github/github/commit/89bca94)
+ * refactor numbering to include old box-shadow - Patrick Marsceill [github/github@414fd6a](https://github.com/github/github/commit/414fd6a)
+ * depricate old box-shadow-large - Patrick Marsceill [github/github@73effa4](https://github.com/github/github/commit/73effa4)
+ * Discrete box-shadow utils - Patrick Marsceill [github/github@d430697](https://github.com/github/github/commit/d430697)
+ * Removing needless disables - Jon Rohan [github/github@6233c40](https://github.com/github/github/commit/6233c40)
+ * Making updates to wording cc @broccolini - Jon Rohan [github/github@d2bf29f](https://github.com/github/github/commit/d2bf29f)
+ * Make all href #url - Mu-An Chiou [github/github@27ba40c](https://github.com/github/github/commit/27ba40c)
+ * Add wb-break-all to docs - Jason Long [github/github@169f2da](https://github.com/github/github/commit/169f2da)
+ * adding text-gray-dark and more acurately mentioning standards - Jon Rohan [github/github@55de600](https://github.com/github/github/commit/55de600)
+ * Bump version - Jason Long [github/github@2404538](https://github.com/github/github/commit/2404538)
+ * Update typography.scss - Jason Long [github/github@ad36e9b](https://github.com/github/github/commit/ad36e9b)
+ * update bg-yellow variables - broccolini [github/github@79701f2](https://github.com/github/github/commit/79701f2)
+ * Remove trailing line break which confuses guide.rb - Mu-An Chiou [github/github@9028863](https://github.com/github/github/commit/9028863)
+ * Improve code samples - Add URL to <a> - Add aria-label to <input> - Add type to <button> - Replace unnecessary <a> with <div> - Mu-An Chiou [github/github@42e67c8](https://github.com/github/github/commit/42e67c8)
+ * Add border to show block difference - Mu-An Chiou [github/github@22f7bdd](https://github.com/github/github/commit/22f7bdd)
+ * Link somewhere, since # shouldn't be allowed - Mu-An Chiou [github/github@09cb5f1](https://github.com/github/github/commit/09cb5f1)
+
+# v3.0.0
+
+
+# v2.0.0
+
+ * Cutting new versions of primer modules - Jon Rohan [github/github@157f5ab](https://github.com/github/github/commit/157f5ab)
+ * Updating layout hints - Jon Rohan [github/github@d6cc7dc](https://github.com/github/github/commit/d6cc7dc)
+ * mentioning link instead of text - Jon Rohan [github/github@008fd98](https://github.com/github/github/commit/008fd98)
+ * Updating the color hints to mention the variables - Jon Rohan [github/github@32a5752](https://github.com/github/github/commit/32a5752)
+ * Replace instances that can be replaced. Delete shadows when on white bgs. - Sophie Shepherd [github/github@e33bf62](https://github.com/github/github/commit/e33bf62)
+ * Add utility classes to typography scss - Sophie Shepherd [github/github@0116477](https://github.com/github/github/commit/0116477)
+ * Rename repository with prefix primer- - Jon Rohan [github/github@ec8774a](https://github.com/github/github/commit/ec8774a)
+ * Using 0 instead of 0px - Jon Rohan [github/github@3c5bcf5](https://github.com/github/github/commit/3c5bcf5)
+ * new argument name, add comments in code - Caleb Winters [github/github@51251be](https://github.com/github/github/commit/51251be)
+ * fix whitelisting - Caleb Winters [github/github@26fba58](https://github.com/github/github/commit/26fba58)
+ * polishing the docs, adding better examples - Caleb Winters [github/github@a7c5fb6](https://github.com/github/github/commit/a7c5fb6)
+ * change tag to experimental, add link to MDN - Caleb Winters [github/github@a47e282](https://github.com/github/github/commit/a47e282)
+ * remove global flex property - Caleb Winters [github/github@16491b8](https://github.com/github/github/commit/16491b8)
+ * Kill unneeded attribute - Patrick Marsceill [github/github@6c071dc](https://github.com/github/github/commit/6c071dc)
+ * Make default box shadow a var and apply it to .box-shadow utility - Patrick Marsceill [github/github@bda03be](https://github.com/github/github/commit/bda03be)
+ * Update box shadow to be better - Patrick Marsceill [github/github@6cbd1f0](https://github.com/github/github/commit/6cbd1f0)
+ * list styles without admin.deps - Sophie Shepherd [github/github@450f684](https://github.com/github/github/commit/450f684)
+ * Revert "Add list-style: none; utility" - Sophie Shepherd [github/github@c6d72f2](https://github.com/github/github/commit/c6d72f2)
+ * Add list-style: none; utility - Sophie Shepherd [github/github@7a494d8](https://github.com/github/github/commit/7a494d8)
+ * Add bg-shade-gradient - Patrick Marsceill [github/github@c7efe79](https://github.com/github/github/commit/c7efe79)
+ * Separating out modules into primer-core and primer-product - Jon Rohan [github/github@ddf698c](https://github.com/github/github/commit/ddf698c)
+
 # v1.0.0
 
  * Updating to major new version - Jon Rohan [github/github@f0df999](https://github.com/github/github/commit/f0df999)

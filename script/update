@@ -1,6 +1,9 @@
 #!/bin/sh
 # Update NPM dependencies
 
-set -e
+set -ex
 
+rm -Rf _sass/primer-*
 npm update
+cp -r node_modules/* _sass
+rm -rf node_modules

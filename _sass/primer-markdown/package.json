@@ -2,49 +2,50 @@
   "_args": [
     [
       {
-        "raw": "primer-markdown@^3.3.1",
+        "raw": "primer-markdown@3.3.6",
         "scope": null,
         "escapedName": "primer-markdown",
         "name": "primer-markdown",
-        "rawSpec": "^3.3.1",
-        "spec": ">=3.3.1 <4.0.0",
-        "type": "range"
+        "rawSpec": "3.3.6",
+        "spec": "3.3.6",
+        "type": "version"
       },
-      "/Users/benbalter/projects/jekyll-theme-primer"
+      "/Users/benbalter/projects/primer"
     ]
   ],
-  "_from": "primer-markdown@>=3.3.1 <4.0.0",
-  "_id": "primer-markdown@3.3.1",
+  "_from": "primer-markdown@3.3.6",
+  "_id": "primer-markdown@3.3.6",
   "_inCache": true,
   "_location": "/primer-markdown",
-  "_nodeVersion": "5.12.0",
+  "_nodeVersion": "7.7.3",
   "_npmOperationalInternal": {
-    "host": "packages-12-west.internal.npmjs.com",
-    "tmp": "tmp/primer-markdown-3.3.1.tgz_1476385389904_0.1807826121803373"
+    "host": "packages-18-east.internal.npmjs.com",
+    "tmp": "tmp/primer-markdown-3.3.6.tgz_1490129607035_0.2747260727919638"
   },
   "_npmUser": {
     "name": "jonrohan",
     "email": "yes@jonrohan.codes"
   },
-  "_npmVersion": "3.8.6",
+  "_npmVersion": "4.1.2",
   "_phantomChildren": {},
   "_requested": {
-    "raw": "primer-markdown@^3.3.1",
+    "raw": "primer-markdown@3.3.6",
     "scope": null,
     "escapedName": "primer-markdown",
     "name": "primer-markdown",
-    "rawSpec": "^3.3.1",
-    "spec": ">=3.3.1 <4.0.0",
-    "type": "range"
+    "rawSpec": "3.3.6",
+    "spec": "3.3.6",
+    "type": "version"
   },
   "_requiredBy": [
+    "#USER",
     "/"
   ],
-  "_resolved": "https://registry.npmjs.org/primer-markdown/-/primer-markdown-3.3.1.tgz",
-  "_shasum": "163a337ddf15823baae9ea2043b228c404ce9e34",
+  "_resolved": "https://registry.npmjs.org/primer-markdown/-/primer-markdown-3.3.6.tgz",
+  "_shasum": "0a5e24fe4ffa8ff23671522099b86e2c0471acb2",
   "_shrinkwrap": null,
-  "_spec": "primer-markdown@^3.3.1",
-  "_where": "/Users/benbalter/projects/jekyll-theme-primer",
+  "_spec": "primer-markdown@3.3.6",
+  "_where": "/Users/benbalter/projects/primer",
   "author": {
     "name": "GitHub, Inc."
   },
@@ -56,23 +57,21 @@
   },
   "description": "GitHub stylesheets for rendering markdown.",
   "devDependencies": {
-    "autoprefixer": "^6.3.6",
-    "node-sass": "^3.7.0",
-    "postcss-cli": "^2.5.2",
-    "stylelint": "^7.0.3",
-    "stylelint-config-primer": "^1.1.0"
+    "primer-module-build": "*",
+    "stylelint": "*",
+    "stylelint-config-primer": "*"
   },
   "directories": {},
   "dist": {
-    "shasum": "163a337ddf15823baae9ea2043b228c404ce9e34",
-    "tarball": "https://registry.npmjs.org/primer-markdown/-/primer-markdown-3.3.1.tgz"
+    "shasum": "0a5e24fe4ffa8ff23671522099b86e2c0471acb2",
+    "tarball": "https://registry.npmjs.org/primer-markdown/-/primer-markdown-3.3.6.tgz"
   },
   "files": [
     "index.scss",
     "lib",
     "build"
   ],
-  "gitHead": "3b1a02ba0105ba46b82f3e235311ccbdf238efa4",
+  "gitHead": "992f5af41b198112476c8a2d7d6bed83ab1fcbc6",
   "homepage": "https://github.com/primer/primer-markdown",
   "keywords": [
     "github",
@@ -85,7 +84,12 @@
     "md"
   ],
   "license": "MIT",
+  "main": "build/index.js",
   "maintainers": [
+    {
+      "name": "broccolini",
+      "email": "diana.mounter@gmail.com"
+    },
     {
       "name": "jonrohan",
       "email": "yes@jonrohan.codes"
@@ -99,11 +103,10 @@
     "url": "git+https://github.com/primer/primer-markdown.git"
   },
   "scripts": {
-    "build": "node-sass index.scss --include-path node_modules --output-style compressed | postcss -c .postcss.json -o build/build.css",
-    "prepublish": "npm run setup && npm run build",
-    "setup": "if [ ! -d \"node_modules\" ]; then npm install; fi",
+    "build": "primer-module-build index.scss",
+    "prepublish": "npm run build",
     "test": "npm run build && stylelint **/*.scss -c .stylelintrc.json -s scss"
   },
   "style": "index.scss",
-  "version": "3.3.1"
+  "version": "3.3.6"
 }

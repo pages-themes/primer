@@ -2,77 +2,76 @@
   "_args": [
     [
       {
-        "raw": "primer-layout@^0.2.4",
+        "raw": "primer-layout@0.3.2",
         "scope": null,
         "escapedName": "primer-layout",
         "name": "primer-layout",
-        "rawSpec": "^0.2.4",
-        "spec": ">=0.2.4 <0.3.0",
-        "type": "range"
+        "rawSpec": "0.3.2",
+        "spec": "0.3.2",
+        "type": "version"
       },
-      "/Users/benbalter/projects/jekyll-theme-primer"
+      "/Users/benbalter/projects/primer"
     ]
   ],
-  "_from": "primer-layout@>=0.2.4 <0.3.0",
-  "_id": "primer-layout@0.2.4",
+  "_from": "primer-layout@0.3.2",
+  "_id": "primer-layout@0.3.2",
   "_inCache": true,
   "_location": "/primer-layout",
-  "_nodeVersion": "5.12.0",
+  "_nodeVersion": "7.7.3",
   "_npmOperationalInternal": {
     "host": "packages-12-west.internal.npmjs.com",
-    "tmp": "tmp/primer-layout-0.2.4.tgz_1471631141474_0.3794332854449749"
+    "tmp": "tmp/primer-layout-0.3.2.tgz_1490129565778_0.9760897683445364"
   },
   "_npmUser": {
     "name": "jonrohan",
     "email": "yes@jonrohan.codes"
   },
-  "_npmVersion": "3.8.6",
+  "_npmVersion": "4.1.2",
   "_phantomChildren": {},
   "_requested": {
-    "raw": "primer-layout@^0.2.4",
+    "raw": "primer-layout@0.3.2",
     "scope": null,
     "escapedName": "primer-layout",
     "name": "primer-layout",
-    "rawSpec": "^0.2.4",
-    "spec": ">=0.2.4 <0.3.0",
-    "type": "range"
+    "rawSpec": "0.3.2",
+    "spec": "0.3.2",
+    "type": "version"
   },
   "_requiredBy": [
+    "#USER",
     "/"
   ],
-  "_resolved": "https://registry.npmjs.org/primer-layout/-/primer-layout-0.2.4.tgz",
-  "_shasum": "36b86fbc77d15350f1a816ee4df3da51d0495d64",
+  "_resolved": "https://registry.npmjs.org/primer-layout/-/primer-layout-0.3.2.tgz",
+  "_shasum": "7f607ac1fad5942f646a05f6a4122a1577407118",
   "_shrinkwrap": null,
-  "_spec": "primer-layout@^0.2.4",
-  "_where": "/Users/benbalter/projects/jekyll-theme-primer",
+  "_spec": "primer-layout@0.3.2",
+  "_where": "/Users/benbalter/projects/primer",
   "author": {
     "name": "GitHub, Inc."
   },
   "bugs": {
-    "url": "https://github.com/primer/layout/issues"
+    "url": "https://github.com/primer/primer-layout/issues"
   },
   "dependencies": {
     "primer-support": "*"
   },
   "description": "Containers, rows, and columns for creating page layout.",
   "devDependencies": {
-    "autoprefixer": "^6.3.6",
-    "node-sass": "^3.7.0",
-    "postcss-cli": "^2.5.2",
-    "stylelint": "^7.0.3",
-    "stylelint-config-primer": "^1.1.0"
+    "primer-module-build": "*",
+    "stylelint": "*",
+    "stylelint-config-primer": "*"
   },
   "directories": {},
   "dist": {
-    "shasum": "36b86fbc77d15350f1a816ee4df3da51d0495d64",
-    "tarball": "https://registry.npmjs.org/primer-layout/-/primer-layout-0.2.4.tgz"
+    "shasum": "7f607ac1fad5942f646a05f6a4122a1577407118",
+    "tarball": "https://registry.npmjs.org/primer-layout/-/primer-layout-0.3.2.tgz"
   },
   "files": [
     "index.scss",
     "lib",
     "build"
   ],
-  "gitHead": "65ec42da11ef78c876d2e285fa3842752f0b38b8",
+  "gitHead": "78a9c41e8f74bdf5986d390ea29e7c80e5bcb135",
   "homepage": "http://primercss.io/",
   "keywords": [
     "primer",
@@ -81,7 +80,12 @@
     "primercss"
   ],
   "license": "MIT",
+  "main": "build/index.js",
   "maintainers": [
+    {
+      "name": "broccolini",
+      "email": "diana.mounter@gmail.com"
+    },
     {
       "name": "jonrohan",
       "email": "yes@jonrohan.codes"
@@ -92,14 +96,13 @@
   "readme": "ERROR: No README data found!",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/primer/layout.git"
+    "url": "git+https://github.com/primer/primer-layout.git"
   },
   "scripts": {
-    "build": "node-sass index.scss --include-path node_modules --output-style compressed | postcss -c .postcss.json -o build/build.css",
-    "prepublish": "npm run setup && npm run build",
-    "setup": "if [ ! -d \"node_modules\" ]; then npm install; fi",
+    "build": "primer-module-build index.scss",
+    "prepublish": "npm run build",
     "test": "npm run build && stylelint **/*.scss -c .stylelintrc.json -s scss"
   },
   "style": "index.scss",
-  "version": "0.2.4"
+  "version": "0.3.2"
 }
