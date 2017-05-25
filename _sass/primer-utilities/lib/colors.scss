@@ -64,7 +64,6 @@
 
 // Text states
 // These can probably all be regular utilities
-.text-renamed { color: $status-renamed !important; }
 .text-pending { color: $yellow-800 !important; }
 // Separate text and background colors in future to improve a11y
 .bg-pending { color: $yellow-700 !important; }

@@ -1,3 +1,8 @@
+# v3.3.7
+
+ * bump version number - Caleb Winters [github/github@1babcd0](https://github.com/github/github/commit/1babcd0)
+ * update code blocks - Caleb Winters [github/github@eb3c6b4](https://github.com/github/github/commit/eb3c6b4)Revert "Fix extra fancy code blocks"Fix extra fancy code blocks
+
 # v3.3.6
 
  * Bump all the version numbers for readme - Mu-An Chiou [github/github@a9d152f](https://github.com/github/github/commit/a9d152f)

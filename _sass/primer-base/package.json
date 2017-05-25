@@ -10,7 +10,7 @@
         "spec": "0.4.2",
         "type": "version"
       },
-      "/Users/benbalter/projects/primer"
+      "/Users/benbalter/projects/pages-themes/primer"
     ]
   ],
   "_from": "primer-base@0.4.2",
@@ -45,7 +45,7 @@
   "_shasum": "10bea7bdd454c447b1ed6e801595f3888b30f01f",
   "_shrinkwrap": null,
   "_spec": "primer-base@0.4.2",
-  "_where": "/Users/benbalter/projects/primer",
+  "_where": "/Users/benbalter/projects/pages-themes/primer",
   "author": {
     "name": "GitHub, Inc."
   },
@@ -96,7 +96,8 @@
   ],
   "name": "primer-base",
   "optionalDependencies": {},
-  "readme": "ERROR: No README data found!",
+  "readme": "# Primer CSS Base\n\n[![NPM version](http://img.shields.io/npm/v/primer-base.svg)](https://www.npmjs.org/package/primer-base)\n[![Build Status](https://travis-ci.org/primer/primer-base.svg?branch=master)](https://travis-ci.org/primer/primer-base)\n\n> GitHub's CSS to reset the browsers default styles. Built on top of normalize.css\n\nThis repository is a module of the full [primer-css][primer-css] repository. And is built off of [normalize.css](https://github.com/necolas/normalize.css/)\n\n## Install\n\nThis repository is distributed with [npm][npm]. After [installing npm][install-npm], you can install `primer-base` with this command.\n\n```\n$ npm install --save primer-base\n```\n\n## Usage\n\nThe source files included are written in [Sass][sass] (`scss`) You can simply point your sass `include-path` at your `node_modules` directory and import it like this.\n\n```scss\n@import \"primer-base/index.scss\";\n```\n\nYou can also import specific portions of the module by importing those partials from the `/lib/` folder. _Make sure you import any requirements along with the modules._\n\n## Build\n\nFor a compiled **css** version of this module, a npm script is included that will output a css version to `build/build.css` The built css file is also included in the npm package.\n\n```\n$ npm run build\n```\n\n## Documentation\n\nYou can read more about base in the [docs][docs].\n\n## License\n\n[MIT](./LICENSE) &copy; [GitHub](https://github.com/)\n\n[primer-css]: https://github.com/primer/primer\n[docs]: http://primercss.io/\n[npm]: https://www.npmjs.com/\n[install-npm]: https://docs.npmjs.com/getting-started/installing-node\n[sass]: http://sass-lang.com/\n",
+  "readmeFilename": "README.md",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/primer/primer-base.git"
