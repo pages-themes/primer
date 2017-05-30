@@ -2,50 +2,50 @@
   "_args": [
     [
       {
-        "raw": "primer-utilities@4.1.1",
+        "raw": "primer-utilities@4.2.4",
         "scope": null,
         "escapedName": "primer-utilities",
         "name": "primer-utilities",
-        "rawSpec": "4.1.1",
-        "spec": "4.1.1",
+        "rawSpec": "4.2.4",
+        "spec": "4.2.4",
         "type": "version"
       },
-      "/Users/benbalter/projects/primer"
+      "/Users/benbalter/projects/pages-themes/primer"
     ]
   ],
-  "_from": "primer-utilities@4.1.1",
-  "_id": "primer-utilities@4.1.1",
+  "_from": "primer-utilities@4.2.4",
+  "_id": "primer-utilities@4.2.4",
   "_inCache": true,
   "_location": "/primer-utilities",
-  "_nodeVersion": "7.7.3",
+  "_nodeVersion": "7.9.0",
   "_npmOperationalInternal": {
-    "host": "packages-12-west.internal.npmjs.com",
-    "tmp": "tmp/primer-utilities-4.1.1.tgz_1490129583996_0.49141979264095426"
+    "host": "packages-18-east.internal.npmjs.com",
+    "tmp": "tmp/primer-utilities-4.2.4.tgz_1492734583567_0.407024021493271"
   },
   "_npmUser": {
     "name": "jonrohan",
     "email": "yes@jonrohan.codes"
   },
-  "_npmVersion": "4.1.2",
+  "_npmVersion": "4.2.0",
   "_phantomChildren": {},
   "_requested": {
-    "raw": "primer-utilities@4.1.1",
+    "raw": "primer-utilities@4.2.4",
     "scope": null,
     "escapedName": "primer-utilities",
     "name": "primer-utilities",
-    "rawSpec": "4.1.1",
-    "spec": "4.1.1",
+    "rawSpec": "4.2.4",
+    "spec": "4.2.4",
     "type": "version"
   },
   "_requiredBy": [
     "#USER",
     "/"
   ],
-  "_resolved": "https://registry.npmjs.org/primer-utilities/-/primer-utilities-4.1.1.tgz",
-  "_shasum": "f02d8168c7c30aa4419114e0abe4259c90e1542f",
+  "_resolved": "https://registry.npmjs.org/primer-utilities/-/primer-utilities-4.2.4.tgz",
+  "_shasum": "68b8ce458bb4cc9d69d841fc003fbbbb423a697a",
   "_shrinkwrap": null,
-  "_spec": "primer-utilities@4.1.1",
-  "_where": "/Users/benbalter/projects/primer",
+  "_spec": "primer-utilities@4.2.4",
+  "_where": "/Users/benbalter/projects/pages-themes/primer",
   "author": {
     "name": "GitHub, Inc."
   },
@@ -63,15 +63,15 @@
   },
   "directories": {},
   "dist": {
-    "shasum": "f02d8168c7c30aa4419114e0abe4259c90e1542f",
-    "tarball": "https://registry.npmjs.org/primer-utilities/-/primer-utilities-4.1.1.tgz"
+    "shasum": "68b8ce458bb4cc9d69d841fc003fbbbb423a697a",
+    "tarball": "https://registry.npmjs.org/primer-utilities/-/primer-utilities-4.2.4.tgz"
   },
   "files": [
     "index.scss",
     "lib",
     "build"
   ],
-  "gitHead": "a181db1e19879e12cc99069a9a444e3adbbee7a3",
+  "gitHead": "4b14bebbd5bb2470b149beffeadf3d9ab76f4300",
   "homepage": "http://primercss.io/",
   "keywords": [
     "primer",
@@ -87,13 +87,38 @@
       "email": "diana.mounter@gmail.com"
     },
     {
+      "name": "dgraham",
+      "email": "david.malcom.graham@gmail.com"
+    },
+    {
+      "name": "github-owner",
+      "email": "dgraham@github.com"
+    },
+    {
       "name": "jonrohan",
       "email": "yes@jonrohan.codes"
+    },
+    {
+      "name": "josh",
+      "email": "josh@joshpeek.com"
+    },
+    {
+      "name": "mdo",
+      "email": "markdotto@gmail.com"
+    },
+    {
+      "name": "mislav",
+      "email": "mislav.marohnic@gmail.com"
+    },
+    {
+      "name": "muan",
+      "email": "me@muanchiou.com"
     }
   ],
   "name": "primer-utilities",
   "optionalDependencies": {},
-  "readme": "ERROR: No README data found!",
+  "readme": "# Primer CSS Utilities\n\n[![NPM version](http://img.shields.io/npm/v/primer-utilities.svg)](https://www.npmjs.org/package/primer-utilities)\n[![Build Status](https://travis-ci.org/primer/primer-utilities.svg?branch=master)](https://travis-ci.org/primer/primer-utilities)\n\n> There are a handful of utilities in Primer for quick behaviors, floats, colors, alignment, and more.\n\nThis repository is a module of the full [primer-css][primer-css] repository.\n\n## Install\n\nThis repository is distributed with [npm][npm]. After [installing npm][install-npm], you can install `primer-utilities` with this command.\n\n```\n$ npm install --save primer-utilities\n```\n\n## Usage\n\nThe source files included are written in [Sass][sass] (`scss`) You can simply point your sass `include-path` at your `node_modules` directory and import it like this.\n\n```scss\n@import \"primer-utilities/index.scss\";\n```\n\nYou can also import specific portions of the module by importing those partials from the `/lib/` folder. _Make sure you import any requirements along with the modules._\n\n## Build\n\nFor a compiled **css** version of this module, a npm script is included that will output a css version to `build/build.css` The built css file is also included in the npm package.\n\n```\n$ npm run build\n```\n\n## Documentation\n\nYou can read more about utilities in the [docs folder](./docs/).\n\n## License\n\n[MIT](./LICENSE) &copy; [GitHub](https://github.com/)\n\n[primer-css]: https://github.com/primer/primer\n[docs]: http://primercss.io/\n[npm]: https://www.npmjs.com/\n[install-npm]: https://docs.npmjs.com/getting-started/installing-node\n[sass]: http://sass-lang.com/\n",
+  "readmeFilename": "README.md",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/primer/primer-utilities.git"
@@ -104,5 +129,5 @@
     "test": "npm run build && stylelint **/*.scss -c .stylelintrc.json -s scss"
   },
   "style": "index.scss",
-  "version": "4.1.1"
+  "version": "4.2.4"
 }

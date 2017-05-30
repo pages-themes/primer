@@ -13,6 +13,7 @@
     "primer-layout": "*",
     "primer-markdown": "*",
     "primer-support": "*",
-    "primer-utilities": "*"
+    "primer-utilities": "*",
+    "anchor-js": "*"
   }
 }
