@@ -7,7 +7,11 @@
     <link href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}" rel="stylesheet">
   </head>
   <body>
-    <div class="container markdown-body">
+    <div class="container markdown-body my-5">
+      {% if site.title and site.title != page.title %}
+        <h1><a href="{{ "/" | absolute_url }}">{{ site.title }}</a></h1>
+      {% endif %}
+
       {{ content }}
     </div>
     <script src="{{ "assets/javascript/anchor-js/anchor.min.js" | relative_url }}"></script>

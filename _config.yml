@@ -2,7 +2,5 @@ exclude:
   - node_modules
   - script
 
-theme: 
-
 sass:
   style: :compressed
