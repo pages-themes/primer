@@ -1,77 +1,45 @@
 {
-  "_args": [
-    [
-      {
-        "raw": "primer-layout@0.3.2",
-        "scope": null,
-        "escapedName": "primer-layout",
-        "name": "primer-layout",
-        "rawSpec": "0.3.2",
-        "spec": "0.3.2",
-        "type": "version"
-      },
-      "/Users/benbalter/projects/pages-themes/primer"
-    ]
-  ],
-  "_from": "primer-layout@0.3.2",
-  "_id": "primer-layout@0.3.2",
-  "_inCache": true,
+  "_from": "primer-layout@1.2.0",
+  "_id": "primer-layout@1.2.0",
+  "_inBundle": false,
+  "_integrity": "sha1-EL2+dEaGybv3/L6N2xT/7A018oI=",
   "_location": "/primer-layout",
-  "_nodeVersion": "7.7.3",
-  "_npmOperationalInternal": {
-    "host": "packages-12-west.internal.npmjs.com",
-    "tmp": "tmp/primer-layout-0.3.2.tgz_1490129565778_0.9760897683445364"
-  },
-  "_npmUser": {
-    "name": "jonrohan",
-    "email": "yes@jonrohan.codes"
-  },
-  "_npmVersion": "4.1.2",
   "_phantomChildren": {},
   "_requested": {
-    "raw": "primer-layout@0.3.2",
-    "scope": null,
-    "escapedName": "primer-layout",
+    "type": "version",
+    "registry": true,
+    "raw": "primer-layout@1.2.0",
     "name": "primer-layout",
-    "rawSpec": "0.3.2",
-    "spec": "0.3.2",
-    "type": "version"
+    "escapedName": "primer-layout",
+    "rawSpec": "1.2.0",
+    "saveSpec": null,
+    "fetchSpec": "1.2.0"
   },
   "_requiredBy": [
     "#USER",
     "/"
   ],
-  "_resolved": "https://registry.npmjs.org/primer-layout/-/primer-layout-0.3.2.tgz",
-  "_shasum": "7f607ac1fad5942f646a05f6a4122a1577407118",
-  "_shrinkwrap": null,
-  "_spec": "primer-layout@0.3.2",
-  "_where": "/Users/benbalter/projects/pages-themes/primer",
+  "_resolved": "https://registry.npmjs.org/primer-layout/-/primer-layout-1.2.0.tgz",
+  "_shasum": "10bdbe744686c9bbf7fcbe8ddb14ffec0d35f282",
+  "_spec": "primer-layout@1.2.0",
+  "_where": "/Users/benbalter/projects/primer",
   "author": {
     "name": "GitHub, Inc."
   },
   "bugs": {
-    "url": "https://github.com/primer/primer-layout/issues"
+    "url": "https://github.com/primer/primer-css/issues"
   },
+  "bundleDependencies": false,
   "dependencies": {
-    "primer-support": "*"
+    "primer-support": "^4.2.0"
   },
+  "deprecated": false,
   "description": "Containers, rows, and columns for creating page layout.",
-  "devDependencies": {
-    "primer-module-build": "*",
-    "stylelint": "*",
-    "stylelint-config-primer": "*"
-  },
-  "directories": {},
-  "dist": {
-    "shasum": "7f607ac1fad5942f646a05f6a4122a1577407118",
-    "tarball": "https://registry.npmjs.org/primer-layout/-/primer-layout-0.3.2.tgz"
-  },
   "files": [
     "index.scss",
     "lib",
     "build"
   ],
-  "gitHead": "78a9c41e8f74bdf5986d390ea29e7c80e5bcb135",
   "homepage": "http://primercss.io/",
   "keywords": [
     "primer",
@@ -81,29 +49,17 @@
   ],
   "license": "MIT",
   "main": "build/index.js",
-  "maintainers": [
-    {
-      "name": "broccolini",
-      "email": "diana.mounter@gmail.com"
-    },
-    {
-      "name": "jonrohan",
-      "email": "yes@jonrohan.codes"
-    }
-  ],
   "name": "primer-layout",
-  "optionalDependencies": {},
-  "readme": "# Primer CSS Layout\n\n[![NPM version](http://img.shields.io/npm/v/primer-layout.svg)](https://www.npmjs.org/package/primer-layout)\n[![Build Status](https://travis-ci.org/primer/primer-layout.svg?branch=master)](https://travis-ci.org/primer/primer-layout)\n\n> Primer’s layout includes basic page containers and a single-tiered, fraction-based grid system. That sounds more complicated than it really is though—it’s just containers, rows, and columns.\n\nThis repository is a module of the full [primer-css][primer-css] repository.\n\n## Install\n\nThis repository is distributed with [npm][npm]. After [installing npm][install-npm], you can install `primer-layout` with this command.\n\n```\n$ npm install --save primer-layout\n```\n\n## Usage\n\nThe source files included are written in [Sass][sass] (`scss`) You can simply point your sass `include-path` at your `node_modules` directory and import it like this.\n\n```scss\n@import \"primer-layout/index.scss\";\n```\n\nYou can also import specific portions of the module by importing those partials from the `/lib/` folder. _Make sure you import any requirements along with the modules._\n\n## Build\n\nFor a compiled **css** version of this module, a npm script is included that will output a css version to `build/build.css` The built css file is also included in the npm package.\n\n```\n$ npm run build\n```\n\n## Documentation\n\n<!-- %docs\ntitle: Layout\nstatus: Deprecated\nstatus_issue: https://github.com/github/design-systems/issues/59\nkey: /css/styles/core/objects/layout\n-->\n\nPrimer's layout includes basic page containers and a single-tiered, fraction-based grid system. That sounds more complicated than it really is though—it's just containers, rows, and columns.\n\nYou can find all the below styles in `_layout.scss`.\n\n#### Container\n\nCenter your page's contents with a `.container`.\n\n```html+erb\n<div class=\"container\">\n  <!-- contents here -->\n</div>\n```\n\nThe container applies `width: 980px;` and uses horizontal `margin`s to center it.\n\n#### Grid\n\n##### How it works\n\nThe grid is pretty standard—you create rows with `.columns` and individual columns with a column class and fraction class. Here's how it works:\n\n- Add a `.container` to encapsulate everything and provide ample horizontal gutter space.\n- Create your outer row to clear the floated columns with `<div class=\"columns\">`.\n- Add your columns with individual `<div class=\"column\">`s.\n- Add your fractional width classes to set the width of the columns (e.g., `.one-fourth`).\n\n##### Demo\n\nIn practice, your columns will look like the example below.\n\n```html\n<div class=\"container\">\n  <div class=\"columns mb-1\">\n    <div class=\"one-fifth column block-blue p-3 border\">\n      .one-fifth\n    </div>\n    <div class=\"four-fifths column block-blue p-3 border\">\n      .four-fifths\n    </div>\n  </div>\n\n  <div class=\"columns mb-1\">\n    <div class=\"one-fourth column block-blue p-3 border\">\n      .one-fourth\n    </div>\n    <div class=\"three-fourths column block-blue p-3 border\">\n      .three-fourths\n    </div>\n  </div>\n\n  <div class=\"columns mb-1\">\n    <div class=\"one-third column block-blue p-3 border\">\n      .one-third\n    </div>\n    <div class=\"two-thirds column block-blue p-3 border\">\n      .two-thirds\n    </div>\n  </div>\n\n  <div class=\"columns\">\n    <div class=\"one-half column block-blue p-3 border\">\n      .one-half\n    </div>\n    <div class=\"one-half column block-blue p-3 border\">\n      .one-half\n    </div>\n  </div>\n</div>\n```\n\n##### Centered\n\nColumns can be [centered](/utilities/#centering-content) by adding `.centered` to the `.column` class.\n\n```html\n<div class=\"columns\">\n  <div class=\"one-half column centered block-blue p-3\">\n    .one-half\n  </div>\n</div>\n```\n<!-- %enddocs -->\n\n## License\n\n[MIT](./LICENSE) &copy; [GitHub](https://github.com/)\n\n[primer-css]: https://github.com/primer/primer\n[docs]: http://primercss.io/\n[npm]: https://www.npmjs.com/\n[install-npm]: https://docs.npmjs.com/getting-started/installing-node\n[sass]: http://sass-lang.com/\n",
-  "readmeFilename": "README.md",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/primer/primer-layout.git"
+    "url": "https://github.com/primer/primer-css/tree/master/modules/primer-layout"
   },
   "scripts": {
     "build": "primer-module-build index.scss",
-    "prepublish": "npm run build",
-    "test": "npm run build && stylelint **/*.scss -c .stylelintrc.json -s scss"
+    "lint": "stylelint **/*.scss -s scss",
+    "prepare": "npm run build",
+    "test": "npm-run-all -s build lint"
   },
   "style": "index.scss",
-  "version": "0.3.2"
+  "version": "1.2.0"
 }

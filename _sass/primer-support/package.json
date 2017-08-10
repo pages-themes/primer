@@ -1,41 +1,19 @@
 {
-  "_args": [
-    [
-      {
-        "raw": "primer-support@4.0.0",
-        "scope": null,
-        "escapedName": "primer-support",
-        "name": "primer-support",
-        "rawSpec": "4.0.0",
-        "spec": "4.0.0",
-        "type": "version"
-      },
-      "/Users/benbalter/projects/pages-themes/primer"
-    ]
-  ],
-  "_from": "primer-support@4.0.0",
-  "_id": "primer-support@4.0.0",
-  "_inCache": true,
+  "_from": "primer-support@4.2.0",
+  "_id": "primer-support@4.2.0",
+  "_inBundle": false,
+  "_integrity": "sha1-l62vtX48YXWP2ZwCwKJBA69XbEE=",
   "_location": "/primer-support",
-  "_nodeVersion": "7.9.0",
-  "_npmOperationalInternal": {
-    "host": "packages-12-west.internal.npmjs.com",
-    "tmp": "tmp/primer-support-4.0.0.tgz_1492733766968_0.0859340624883771"
-  },
-  "_npmUser": {
-    "name": "jonrohan",
-    "email": "yes@jonrohan.codes"
-  },
-  "_npmVersion": "4.2.0",
   "_phantomChildren": {},
   "_requested": {
-    "raw": "primer-support@4.0.0",
-    "scope": null,
-    "escapedName": "primer-support",
+    "type": "version",
+    "registry": true,
+    "raw": "primer-support@4.2.0",
     "name": "primer-support",
-    "rawSpec": "4.0.0",
-    "spec": "4.0.0",
-    "type": "version"
+    "escapedName": "primer-support",
+    "rawSpec": "4.2.0",
+    "saveSpec": null,
+    "fetchSpec": "4.2.0"
   },
   "_requiredBy": [
     "#USER",
@@ -45,33 +23,23 @@
     "/primer-markdown",
     "/primer-utilities"
   ],
-  "_resolved": "https://registry.npmjs.org/primer-support/-/primer-support-4.0.0.tgz",
-  "_shasum": "3dbbb37e4e0f2ed2ea6035e0b79dd0cb33bae85e",
-  "_shrinkwrap": null,
-  "_spec": "primer-support@4.0.0",
-  "_where": "/Users/benbalter/projects/pages-themes/primer",
+  "_resolved": "https://registry.npmjs.org/primer-support/-/primer-support-4.2.0.tgz",
+  "_shasum": "97adafb57e3c61758fd99c02c0a24103af576c41",
+  "_spec": "primer-support@4.2.0",
+  "_where": "/Users/benbalter/projects/primer",
   "author": {
     "name": "GitHub, Inc."
   },
   "bugs": {
-    "url": "https://github.com/primer/primer-support/issues"
+    "url": "https://github.com/primer/primer-css/issues"
   },
-  "dependencies": {},
+  "bundleDependencies": false,
+  "deprecated": false,
   "description": "Sass variables, mixins, and functions for use in our components.",
-  "devDependencies": {
-    "stylelint": "*",
-    "stylelint-config-primer": "*"
-  },
-  "directories": {},
-  "dist": {
-    "shasum": "3dbbb37e4e0f2ed2ea6035e0b79dd0cb33bae85e",
-    "tarball": "https://registry.npmjs.org/primer-support/-/primer-support-4.0.0.tgz"
-  },
   "files": [
     "index.scss",
     "lib"
   ],
-  "gitHead": "4e42d05bd727bd3c45a9d48178f4d356cff17a23",
   "homepage": "http://primercss.io/",
   "keywords": [
     "primer",
@@ -84,51 +52,15 @@
     "scss"
   ],
   "license": "MIT",
-  "maintainers": [
-    {
-      "name": "broccolini",
-      "email": "diana.mounter@gmail.com"
-    },
-    {
-      "name": "dgraham",
-      "email": "david.malcom.graham@gmail.com"
-    },
-    {
-      "name": "github-owner",
-      "email": "dgraham@github.com"
-    },
-    {
-      "name": "jonrohan",
-      "email": "yes@jonrohan.codes"
-    },
-    {
-      "name": "josh",
-      "email": "josh@joshpeek.com"
-    },
-    {
-      "name": "mdo",
-      "email": "markdotto@gmail.com"
-    },
-    {
-      "name": "mislav",
-      "email": "mislav.marohnic@gmail.com"
-    },
-    {
-      "name": "muan",
-      "email": "me@muanchiou.com"
-    }
-  ],
   "name": "primer-support",
-  "optionalDependencies": {},
-  "readme": "# Primer CSS Support\n\n[![NPM version](http://img.shields.io/npm/v/primer-support.svg)](https://www.npmjs.org/package/primer-support)\n[![Build Status](https://travis-ci.org/primer/primer-support.svg?branch=master)](https://travis-ci.org/primer/primer-support)\n\n> Support files are Sass variables, mixins, and functions that we import into different bases for use across components, objects, and utilities. Sharing these common properties across GitHub sites helps us to keep our styles more consistent.\n>\n> Most of the time to include these you'll only need to add `@import \"support/support\";` to the top of your bundle. If you want only a specific partial you can import them separately.\n\nThis repository is a module of the full [primer-css][primer] repository.\n\n## Install\n\nThis repository is distributed with [npm][npm]. After [installing npm][install-npm], you can install `primer-support` with this command.\n\n```\n$ npm install --save primer-support\n```\n\n## Usage\n\nThe source files included are written in [Sass][sass] (`scss`) You can simply point your sass `include-path` at your `node_modules` directory and import it like this.\n\n```scss\n@import \"primer-support/index.scss\";\n```\n\nYou can also import specific portions of the module by importing those partials from the `/lib/` folder. _Make sure you import any requirements along with the modules._\n\n## Documentation\n\nYou can read more about support in the [docs][docs].\n\n## License\n\n[MIT](./LICENSE) &copy; [GitHub](https://github.com/)\n\n[primer]: https://github.com/primer/primer\n[docs]: http://primercss.io/\n[npm]: https://www.npmjs.com/\n[install-npm]: https://docs.npmjs.com/getting-started/installing-node\n[sass]: http://sass-lang.com/\n",
-  "readmeFilename": "README.md",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/primer/primer-support.git"
+    "url": "https://github.com/primer/primer-css/tree/master/modules/primer-support"
   },
   "scripts": {
-    "test": "stylelint **/*.scss -c .stylelintrc.json -s scss"
+    "lint": "stylelint **/*.scss -s scss",
+    "test": "npm run lint"
   },
   "style": "index.scss",
-  "version": "4.0.0"
+  "version": "4.2.0"
 }

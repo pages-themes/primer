@@ -1,77 +1,45 @@
 {
-  "_args": [
-    [
-      {
-        "raw": "primer-base@0.4.2",
-        "scope": null,
-        "escapedName": "primer-base",
-        "name": "primer-base",
-        "rawSpec": "0.4.2",
-        "spec": "0.4.2",
-        "type": "version"
-      },
-      "/Users/benbalter/projects/pages-themes/primer"
-    ]
-  ],
-  "_from": "primer-base@0.4.2",
-  "_id": "primer-base@0.4.2",
-  "_inCache": true,
+  "_from": "primer-base@1.3.0",
+  "_id": "primer-base@1.3.0",
+  "_inBundle": false,
+  "_integrity": "sha1-168n/E8ahjG/NuQOqf3G0H3TGRg=",
   "_location": "/primer-base",
-  "_nodeVersion": "7.4.0",
-  "_npmOperationalInternal": {
-    "host": "packages-18-east.internal.npmjs.com",
-    "tmp": "tmp/primer-base-0.4.2.tgz_1484826723227_0.8080247030593455"
-  },
-  "_npmUser": {
-    "name": "jonrohan",
-    "email": "yes@jonrohan.codes"
-  },
-  "_npmVersion": "4.0.5",
   "_phantomChildren": {},
   "_requested": {
-    "raw": "primer-base@0.4.2",
-    "scope": null,
-    "escapedName": "primer-base",
+    "type": "version",
+    "registry": true,
+    "raw": "primer-base@1.3.0",
     "name": "primer-base",
-    "rawSpec": "0.4.2",
-    "spec": "0.4.2",
-    "type": "version"
+    "escapedName": "primer-base",
+    "rawSpec": "1.3.0",
+    "saveSpec": null,
+    "fetchSpec": "1.3.0"
   },
   "_requiredBy": [
     "#USER",
     "/"
   ],
-  "_resolved": "https://registry.npmjs.org/primer-base/-/primer-base-0.4.2.tgz",
-  "_shasum": "10bea7bdd454c447b1ed6e801595f3888b30f01f",
-  "_shrinkwrap": null,
-  "_spec": "primer-base@0.4.2",
-  "_where": "/Users/benbalter/projects/pages-themes/primer",
+  "_resolved": "https://registry.npmjs.org/primer-base/-/primer-base-1.3.0.tgz",
+  "_shasum": "d7af27fc4f1a8631bf36e40ea9fdc6d07dd31918",
+  "_spec": "primer-base@1.3.0",
+  "_where": "/Users/benbalter/projects/primer",
   "author": {
     "name": "GitHub, Inc."
   },
   "bugs": {
-    "url": "https://github.com/primer/primer-base/issues"
+    "url": "https://github.com/primer/primer-css/issues"
   },
+  "bundleDependencies": false,
   "dependencies": {
-    "primer-support": "*"
+    "primer-support": "^4.2.0"
   },
+  "deprecated": false,
   "description": "CSS to reset the browsers default styles",
-  "devDependencies": {
-    "primer-module-build": "*",
-    "stylelint": "*",
-    "stylelint-config-primer": "*"
-  },
-  "directories": {},
-  "dist": {
-    "shasum": "10bea7bdd454c447b1ed6e801595f3888b30f01f",
-    "tarball": "https://registry.npmjs.org/primer-base/-/primer-base-0.4.2.tgz"
-  },
   "files": [
     "index.scss",
     "lib",
     "build"
   ],
-  "gitHead": "0b48007af04945594bf6028d60971f0e57854aa3",
   "homepage": "http://primercss.io/",
   "keywords": [
     "primer",
@@ -84,29 +52,17 @@
   ],
   "license": "MIT",
   "main": "build/index.js",
-  "maintainers": [
-    {
-      "name": "broccolini",
-      "email": "diana.mounter@gmail.com"
-    },
-    {
-      "name": "jonrohan",
-      "email": "yes@jonrohan.codes"
-    }
-  ],
   "name": "primer-base",
-  "optionalDependencies": {},
-  "readme": "# Primer CSS Base\n\n[![NPM version](http://img.shields.io/npm/v/primer-base.svg)](https://www.npmjs.org/package/primer-base)\n[![Build Status](https://travis-ci.org/primer/primer-base.svg?branch=master)](https://travis-ci.org/primer/primer-base)\n\n> GitHub's CSS to reset the browsers default styles. Built on top of normalize.css\n\nThis repository is a module of the full [primer-css][primer-css] repository. And is built off of [normalize.css](https://github.com/necolas/normalize.css/)\n\n## Install\n\nThis repository is distributed with [npm][npm]. After [installing npm][install-npm], you can install `primer-base` with this command.\n\n```\n$ npm install --save primer-base\n```\n\n## Usage\n\nThe source files included are written in [Sass][sass] (`scss`) You can simply point your sass `include-path` at your `node_modules` directory and import it like this.\n\n```scss\n@import \"primer-base/index.scss\";\n```\n\nYou can also import specific portions of the module by importing those partials from the `/lib/` folder. _Make sure you import any requirements along with the modules._\n\n## Build\n\nFor a compiled **css** version of this module, a npm script is included that will output a css version to `build/build.css` The built css file is also included in the npm package.\n\n```\n$ npm run build\n```\n\n## Documentation\n\nYou can read more about base in the [docs][docs].\n\n## License\n\n[MIT](./LICENSE) &copy; [GitHub](https://github.com/)\n\n[primer-css]: https://github.com/primer/primer\n[docs]: http://primercss.io/\n[npm]: https://www.npmjs.com/\n[install-npm]: https://docs.npmjs.com/getting-started/installing-node\n[sass]: http://sass-lang.com/\n",
-  "readmeFilename": "README.md",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/primer/primer-base.git"
+    "url": "https://github.com/primer/primer-css/tree/master/modules/primer-base"
   },
   "scripts": {
     "build": "primer-module-build index.scss",
-    "prepublish": "npm run build",
-    "test": "npm run build && stylelint **/*.scss -c .stylelintrc.json -s scss"
+    "lint": "stylelint **/*.scss -s scss",
+    "prepare": "npm run build",
+    "test": "npm-run-all -s build lint"
   },
   "style": "index.scss",
-  "version": "0.4.2"
+  "version": "1.3.0"
 }

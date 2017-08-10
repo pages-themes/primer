@@ -9,11 +9,11 @@
   "author": "Ben Balter",
   "license": "MIT",
   "dependencies": {
-    "primer-base": "*",
-    "primer-layout": "*",
-    "primer-markdown": "*",
-    "primer-support": "*",
-    "primer-utilities": "*",
-    "anchor-js": "*"
+    "anchor-js": "^4.0.0",
+    "primer-base": "^1.3.0",
+    "primer-layout": "^1.2.0",
+    "primer-markdown": "^3.5.0",
+    "primer-support": "^4.2.0",
+    "primer-utilities": "^4.5.0"
   }
 }
