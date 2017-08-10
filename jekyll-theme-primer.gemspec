@@ -15,6 +15,7 @@ Gem::Specification.new do |s|
   s.platform      = Gem::Platform::RUBY
   s.license       = "None"
 
-  s.add_dependency "jekyll", "~> 3.3"
+  s.add_dependency "jekyll", "~> 3.5"
+  s.add_runtime_dependency "jekyll-seo-tag", "~> 2.2"
   s.add_development_dependency "rubocop", "~> 0.40"
 end
