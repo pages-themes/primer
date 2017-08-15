@@ -6,3 +6,14 @@ sass:
   style: :compressed
 
 theme: jekyll-theme-primer
+
+github:
+  private: false
+  license:
+    name: MIT
+  source:
+    branch: "master"
+    path: "/"
+
+title: Jekyll Theme Primer
+description: Primer is a Jekyll theme for GitHub Pages 
