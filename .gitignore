@@ -4,3 +4,5 @@ node_modules
 *.gem
 Gemfile.lock
 *.gem
+assets/**/*.html
+assets/**/*.md
