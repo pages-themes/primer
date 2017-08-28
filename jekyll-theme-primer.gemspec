@@ -17,5 +17,6 @@ Gem::Specification.new do |s|
 
   s.add_dependency "jekyll", "~> 3.5"
   s.add_runtime_dependency "jekyll-seo-tag", "~> 2.2"
+  s.add_runtime_dependency "jekyll-github-metadata", "~> 2.9"
   s.add_development_dependency "rubocop", "~> 0.40"
 end
