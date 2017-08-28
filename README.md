@@ -1,6 +1,6 @@
 # The Primer theme
 
-[![Build Status](https://travis-ci.org/pages-themes/jekyll-theme-primer.svg?branch=master)](https://travis-ci.org/pages-themes/jekyll-theme-primer) [![Gem Version](https://badge.fury.io/rb/jekyll-theme-primer.svg)](https://badge.fury.io/rb/jekyll-theme-primer)
+[![Build Status](https://travis-ci.org/pages-themes/primer.svg?branch=master)](https://travis-ci.org/pages-themes/primer) [![Gem Version](https://badge.fury.io/rb/jekyll-theme-primer.svg)](https://badge.fury.io/rb/jekyll-theme-primer)
 
 *Primer is a Jekyll theme for GitHub Pages. You can [preview the theme to see what it looks like](http://pages-themes.github.io/primer), or even [use it today](#usage).*
 
