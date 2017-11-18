@@ -65,7 +65,7 @@ If you'd like to change the theme's HTML layout:
 
 ## Roadmap
 
-See the [open issues](https://github.com/pagse-themes/primer/issues) for a list of proposed features (and known issues).
+See the [open issues](https://github.com/pages-themes/primer/issues) for a list of proposed features (and known issues).
 
 ## Project philosophy
 
