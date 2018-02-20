@@ -1,65 +1,71 @@
 {
-  "_from": "primer-utilities@4.5.0",
-  "_id": "primer-utilities@4.5.0",
+  "_from": "primer-utilities@4.8.5",
+  "_id": "primer-utilities@4.8.5",
   "_inBundle": false,
-  "_integrity": "sha1-6tXV+D2U+ntiv3oELbTxoHqv0hQ=",
+  "_integrity": "sha1-nzsb6O76zsHg6qJ16kyOKdxoPOs=",
   "_location": "/primer-utilities",
   "_phantomChildren": {},
   "_requested": {
     "type": "version",
     "registry": true,
-    "raw": "primer-utilities@4.5.0",
+    "raw": "primer-utilities@4.8.5",
     "name": "primer-utilities",
     "escapedName": "primer-utilities",
-    "rawSpec": "4.5.0",
+    "rawSpec": "4.8.5",
     "saveSpec": null,
-    "fetchSpec": "4.5.0"
+    "fetchSpec": "4.8.5"
   },
   "_requiredBy": [
     "#USER",
     "/"
   ],
-  "_resolved": "https://registry.npmjs.org/primer-utilities/-/primer-utilities-4.5.0.tgz",
-  "_shasum": "ead5d5f83d94fa7b62bf7a042db4f1a07aafd214",
-  "_spec": "primer-utilities@4.5.0",
-  "_where": "/Users/benbalter/projects/primer",
+  "_resolved": "https://registry.npmjs.org/primer-utilities/-/primer-utilities-4.8.5.tgz",
+  "_shasum": "9f3b1be8eefacec1e0eaa275ea4c8e29dc683ceb",
+  "_spec": "primer-utilities@4.8.5",
+  "_where": "/Users/parkr/github/jekyll-theme-primer",
   "author": {
     "name": "GitHub, Inc."
   },
   "bugs": {
-    "url": "https://github.com/primer/primer-css/issues"
+    "url": "https://github.com/primer/primer/issues"
   },
   "bundleDependencies": false,
   "dependencies": {
-    "primer-support": "^4.2.0"
+    "primer-support": "4.5.2"
   },
   "deprecated": false,
   "description": "Immutable, atomic CSS classes to rapidly build product",
   "files": [
     "index.scss",
     "lib",
-    "build"
+    "build",
+    "docs"
   ],
-  "homepage": "http://primercss.io/",
+  "homepage": "http://primer.github.io/",
   "keywords": [
     "primer",
     "css",
     "github",
-    "primercss"
+    "design-system"
   ],
   "license": "MIT",
   "main": "build/index.js",
   "name": "primer-utilities",
+  "primer": {
+    "category": "core",
+    "module_type": "utilities"
+  },
   "repository": {
     "type": "git",
-    "url": "https://github.com/primer/primer-css/tree/master/modules/primer-utilities"
+    "url": "https://github.com/primer/primer/tree/master/modules/primer-utilities"
   },
+  "sass": "index.scss",
   "scripts": {
-    "build": "primer-module-build index.scss",
-    "lint": "stylelint **/*.scss -s scss",
+    "build": "../../script/npm-run primer-module-build index.scss",
+    "lint": "../../script/lint-scss",
     "prepare": "npm run build",
-    "test": "npm-run-all -s build lint"
+    "test": "../../script/npm-run-all build lint"
   },
-  "style": "index.scss",
-  "version": "4.5.0"
+  "style": "build/build.css",
+  "version": "4.8.5"
 }

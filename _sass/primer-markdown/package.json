@@ -1,37 +1,37 @@
 {
-  "_from": "primer-markdown@3.5.0",
-  "_id": "primer-markdown@3.5.0",
+  "_from": "primer-markdown@3.7.5",
+  "_id": "primer-markdown@3.7.5",
   "_inBundle": false,
-  "_integrity": "sha1-ntu7DZPHm05UADoTsPXUsgz2DgI=",
+  "_integrity": "sha1-u45RZGhGomtoqrTZ54WMLjbSmPg=",
   "_location": "/primer-markdown",
   "_phantomChildren": {},
   "_requested": {
     "type": "version",
     "registry": true,
-    "raw": "primer-markdown@3.5.0",
+    "raw": "primer-markdown@3.7.5",
     "name": "primer-markdown",
     "escapedName": "primer-markdown",
-    "rawSpec": "3.5.0",
+    "rawSpec": "3.7.5",
     "saveSpec": null,
-    "fetchSpec": "3.5.0"
+    "fetchSpec": "3.7.5"
   },
   "_requiredBy": [
     "#USER",
     "/"
   ],
-  "_resolved": "https://registry.npmjs.org/primer-markdown/-/primer-markdown-3.5.0.tgz",
-  "_shasum": "9edbbb0d93c79b4e54003a13b0f5d4b20cf60e02",
-  "_spec": "primer-markdown@3.5.0",
-  "_where": "/Users/benbalter/projects/primer",
+  "_resolved": "https://registry.npmjs.org/primer-markdown/-/primer-markdown-3.7.5.tgz",
+  "_shasum": "bb8e51646846a26b68aab4d9e7858c2e36d298f8",
+  "_spec": "primer-markdown@3.7.5",
+  "_where": "/Users/parkr/github/jekyll-theme-primer",
   "author": {
     "name": "GitHub, Inc."
   },
   "bugs": {
-    "url": "https://github.com/primer/primer-css/issues"
+    "url": "https://github.com/primer/primer/issues"
   },
   "bundleDependencies": false,
   "dependencies": {
-    "primer-support": "^4.2.0"
+    "primer-support": "4.5.2"
   },
   "deprecated": false,
   "description": "GitHub stylesheets for rendering markdown.",
@@ -54,16 +54,21 @@
   "license": "MIT",
   "main": "build/index.js",
   "name": "primer-markdown",
+  "primer": {
+    "category": "product",
+    "module_type": "components"
+  },
   "repository": {
     "type": "git",
-    "url": "https://github.com/primer/primer-css/tree/master/modules/primer-markdown"
+    "url": "https://github.com/primer/primer/tree/master/modules/primer-markdown"
   },
+  "sass": "index.scss",
   "scripts": {
-    "build": "primer-module-build index.scss",
-    "lint": "stylelint **/*.scss -s scss",
+    "build": "../../script/npm-run primer-module-build index.scss",
+    "lint": "../../script/lint-scss",
     "prepare": "npm run build",
-    "test": "npm-run-all -s build lint"
+    "test": "../../script/npm-run-all build lint"
   },
-  "style": "index.scss",
-  "version": "3.5.0"
+  "style": "build/build.css",
+  "version": "3.7.5"
 }

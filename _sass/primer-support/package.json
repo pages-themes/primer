@@ -1,19 +1,19 @@
 {
-  "_from": "primer-support@4.2.0",
-  "_id": "primer-support@4.2.0",
+  "_from": "primer-support@4.5.2",
+  "_id": "primer-support@4.5.2",
   "_inBundle": false,
-  "_integrity": "sha1-l62vtX48YXWP2ZwCwKJBA69XbEE=",
+  "_integrity": "sha1-2quaSIgbaVPo5soBhlovQVv3d8U=",
   "_location": "/primer-support",
   "_phantomChildren": {},
   "_requested": {
     "type": "version",
     "registry": true,
-    "raw": "primer-support@4.2.0",
+    "raw": "primer-support@4.5.2",
     "name": "primer-support",
     "escapedName": "primer-support",
-    "rawSpec": "4.2.0",
+    "rawSpec": "4.5.2",
     "saveSpec": null,
-    "fetchSpec": "4.2.0"
+    "fetchSpec": "4.5.2"
   },
   "_requiredBy": [
     "#USER",
@@ -23,29 +23,30 @@
     "/primer-markdown",
     "/primer-utilities"
   ],
-  "_resolved": "https://registry.npmjs.org/primer-support/-/primer-support-4.2.0.tgz",
-  "_shasum": "97adafb57e3c61758fd99c02c0a24103af576c41",
-  "_spec": "primer-support@4.2.0",
-  "_where": "/Users/benbalter/projects/primer",
+  "_resolved": "https://registry.npmjs.org/primer-support/-/primer-support-4.5.2.tgz",
+  "_shasum": "daab9a48881b6953e8e6ca01865a2f415bf777c5",
+  "_spec": "primer-support@4.5.2",
+  "_where": "/Users/parkr/github/jekyll-theme-primer",
   "author": {
     "name": "GitHub, Inc."
   },
   "bugs": {
-    "url": "https://github.com/primer/primer-css/issues"
+    "url": "https://github.com/primer/primer/issues"
   },
   "bundleDependencies": false,
   "deprecated": false,
   "description": "Sass variables, mixins, and functions for use in our components.",
   "files": [
     "index.scss",
-    "lib"
+    "lib",
+    "docs"
   ],
-  "homepage": "http://primercss.io/",
+  "homepage": "http://primer.github.io/",
   "keywords": [
     "primer",
     "css",
     "github",
-    "primercss",
+    "design-system",
     "mixins",
     "functions",
     "variables",
@@ -53,14 +54,20 @@
   ],
   "license": "MIT",
   "name": "primer-support",
+  "primer": {
+    "category": "core",
+    "module_type": "support"
+  },
   "repository": {
     "type": "git",
-    "url": "https://github.com/primer/primer-css/tree/master/modules/primer-support"
+    "url": "https://github.com/primer/primer/tree/master/modules/primer-support"
   },
+  "sass": "index.scss",
   "scripts": {
-    "lint": "stylelint **/*.scss -s scss",
+    "build": "../../script/npm-run primer-module-build index.scss",
+    "lint": "../../script/lint-scss",
     "test": "npm run lint"
   },
-  "style": "index.scss",
-  "version": "4.2.0"
+  "style": "build/build.css",
+  "version": "4.5.2"
 }
