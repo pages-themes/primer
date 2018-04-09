@@ -24,4 +24,3 @@ def validate(file)
 end
 
 validate 'index.html'
-validate File.join 'assets', 'css', 'style.css'
