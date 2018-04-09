@@ -1,6 +1,6 @@
-inherit_gem:
-  jekyll: .rubocop.yml
-
 AllCops:
-  Include:
-    - '**/*.gemspec'
+  Exclude:
+    - _site/**/*
+
+Metrics/LineLength:
+  Enabled: false
