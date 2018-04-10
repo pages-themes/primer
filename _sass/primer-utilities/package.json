@@ -1,28 +1,28 @@
 {
-  "_from": "primer-utilities@4.8.5",
-  "_id": "primer-utilities@4.8.5",
+  "_from": "primer-utilities@4.9.0",
+  "_id": "primer-utilities@4.9.0",
   "_inBundle": false,
-  "_integrity": "sha1-nzsb6O76zsHg6qJ16kyOKdxoPOs=",
+  "_integrity": "sha1-KI9tuY7vsC/pFHEejs4dk6y07yk=",
   "_location": "/primer-utilities",
   "_phantomChildren": {},
   "_requested": {
     "type": "version",
     "registry": true,
-    "raw": "primer-utilities@4.8.5",
+    "raw": "primer-utilities@4.9.0",
     "name": "primer-utilities",
     "escapedName": "primer-utilities",
-    "rawSpec": "4.8.5",
+    "rawSpec": "4.9.0",
     "saveSpec": null,
-    "fetchSpec": "4.8.5"
+    "fetchSpec": "4.9.0"
   },
   "_requiredBy": [
     "#USER",
     "/"
   ],
-  "_resolved": "https://registry.npmjs.org/primer-utilities/-/primer-utilities-4.8.5.tgz",
-  "_shasum": "9f3b1be8eefacec1e0eaa275ea4c8e29dc683ceb",
-  "_spec": "primer-utilities@4.8.5",
-  "_where": "/Users/parkr/github/jekyll-theme-primer",
+  "_resolved": "https://registry.npmjs.org/primer-utilities/-/primer-utilities-4.9.0.tgz",
+  "_shasum": "288f6db98eefb02fe914711e8ece1d93acb4ef29",
+  "_spec": "primer-utilities@4.9.0",
+  "_where": "/Users/benbalter/projects/pages-themes/primer",
   "author": {
     "name": "GitHub, Inc."
   },
@@ -67,5 +67,5 @@
     "test": "../../script/npm-run-all build lint"
   },
   "style": "build/build.css",
-  "version": "4.8.5"
+  "version": "4.9.0"
 }

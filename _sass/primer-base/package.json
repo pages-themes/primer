@@ -1,28 +1,28 @@
 {
-  "_from": "primer-base@1.6.3",
-  "_id": "primer-base@1.6.3",
+  "_from": "primer-base@1.7.0",
+  "_id": "primer-base@1.7.0",
   "_inBundle": false,
-  "_integrity": "sha1-Mqtei9jMoM8/Byqie7CHuuBfeWc=",
+  "_integrity": "sha1-38I7P0hUN+NvjbyPAqZNz4Kt7W0=",
   "_location": "/primer-base",
   "_phantomChildren": {},
   "_requested": {
     "type": "version",
     "registry": true,
-    "raw": "primer-base@1.6.3",
+    "raw": "primer-base@1.7.0",
     "name": "primer-base",
     "escapedName": "primer-base",
-    "rawSpec": "1.6.3",
+    "rawSpec": "1.7.0",
     "saveSpec": null,
-    "fetchSpec": "1.6.3"
+    "fetchSpec": "1.7.0"
   },
   "_requiredBy": [
     "#USER",
     "/"
   ],
-  "_resolved": "https://registry.npmjs.org/primer-base/-/primer-base-1.6.3.tgz",
-  "_shasum": "32ab5e8bd8cca0cf3f072aa27bb087bae05f7967",
-  "_spec": "primer-base@1.6.3",
-  "_where": "/Users/parkr/github/jekyll-theme-primer",
+  "_resolved": "https://registry.npmjs.org/primer-base/-/primer-base-1.7.0.tgz",
+  "_shasum": "dfc23b3f485437e36f8dbc8f02a64dcf82aded6d",
+  "_spec": "primer-base@1.7.0",
+  "_where": "/Users/benbalter/projects/pages-themes/primer",
   "author": {
     "name": "GitHub, Inc."
   },
@@ -69,5 +69,5 @@
     "test": "../../script/npm-run-all build lint"
   },
   "style": "build/build.css",
-  "version": "1.6.3"
+  "version": "1.7.0"
 }
