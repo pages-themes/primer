@@ -11,7 +11,7 @@ Gem::Specification.new do |s|
   end
 
   s.platform      = Gem::Platform::RUBY
-  s.license       = 'None'
+  s.license       = 'MIT'
 
   s.add_dependency 'jekyll', '~> 3.5'
   s.add_runtime_dependency 'jekyll-github-metadata', '~> 2.9'
