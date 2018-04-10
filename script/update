@@ -4,15 +4,8 @@
 set -ex
 
 rm -Rf _sass/primer-*
-rm -rf assets/javascript/anchor-js/
 
 npm update
-
-mkdir -p assets/javascript/
-mv node_modules/anchor-js assets/javascript/anchor-js
-rm -rf assets/javascript/anchor-js/README.md
-rm -rf assets/javascript/anchor-js/test
-rm -rf assets/javascript/anchor-js/*.json
 
 cp -r node_modules/* _sass
 rm -rf node_modules
