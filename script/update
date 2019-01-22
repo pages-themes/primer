@@ -6,6 +6,6 @@ set -ex
 rm -Rf _sass/primer-*
 
 npm update
+npx primer-sync _sass
 
-cp -r node_modules/* _sass
 rm -rf node_modules
