@@ -14,5 +14,8 @@
     "primer-markdown": "^3.5.0",
     "primer-support": "^4.2.0",
     "primer-utilities": "^4.5.0"
+  },
+  "devDependencies": {
+    "@primer/sync": "^0.1.0"
   }
 }
