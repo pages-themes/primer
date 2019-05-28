@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 Gem::Specification.new do |s|
   s.name          = 'jekyll-theme-primer'
   s.version       = '0.5.3'
