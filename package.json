@@ -16,6 +16,6 @@
     "primer-utilities": "^4.14.4"
   },
   "devDependencies": {
-    "@primer/sync": "^0.1.0"
+    "@primer/sync": "^1.0.0"
   }
 }
