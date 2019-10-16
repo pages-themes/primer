@@ -6,7 +6,7 @@
 
 ## Usage
 
-> **_NOTE:_** Primer is now the default theme for Github Pages, but you can still specify the theme you're using as below.
+> **_NOTE:_** Primer is now the default theme for GitHub Pages, but you can still specify the theme you're using as below.
 
 To use the Primer theme:
 
