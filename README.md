@@ -6,6 +6,8 @@
 
 ## Usage
 
+> **_NOTE:_** Primer is now the default theme for GitHub Pages, but you can still specify the theme you're using as below.
+
 To use the Primer theme:
 
 1. Add the following to your site's `_config.yml`:
@@ -72,7 +74,7 @@ The Primer theme is intended to make it quick and easy for GitHub Pages users to
 
 ## Contributing
 
-Interested in contributing to Primer? We'd love your help. Primer is an open source project, built one contribution at a time by users like you. See [the CONTRIBUTING file](CONTRIBUTING.md) for instructions on how to contribute.
+Interested in contributing to Primer? We'd love your help. Primer is an open source project, built one contribution at a time by users like you. See [the CONTRIBUTING file](docs/CONTRIBUTING.md) for instructions on how to contribute.
 
 ### Previewing the theme locally
 
