@@ -21,11 +21,7 @@ body {
 }
 
 a {
-  color: $text-blue;
-
-  &:hover {
-    text-decoration: underline;
-  }
+  color: $text-blue; 
 }
 
 b,
