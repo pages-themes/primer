@@ -1,0 +1,10 @@
+
+// Do not edit directly
+// Generated on Mon, 17 Oct 2022 21:56:43 GMT
+
+$primer-viewportRange-landscape: (orientation: landscape);
+$primer-viewportRange-portrait: (orientation: portrait);
+$primer-viewportRange-wide: (min-width: $primer-breakpoint-xxlarge);
+$primer-viewportRange-regular: (min-width: $primer-breakpoint-medium);
+$primer-viewportRange-narrowLandscape: (max-width: calc($primer-breakpoint-large - 0.02px) and (max-height: calc($primer-breakpoint-small - 0.02px)) and (orientation: landscape));
+$primer-viewportRange-narrow: (max-width: calc($primer-breakpoint-medium - 0.02px));

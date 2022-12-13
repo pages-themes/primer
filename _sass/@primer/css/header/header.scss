@@ -1,0 +1,47 @@
+.Header {
+  z-index: 32; // TODO: Figure out z-index system
+  display: flex;
+  padding: $spacer-3;
+  font-size: $h5-size;
+  line-height: $lh-default;
+  color: var(--color-header-text);
+  background-color: var(--color-header-bg);
+  align-items: center;
+  flex-wrap: nowrap;
+}
+
+.Header-item {
+  display: flex;
+  margin-right: $spacer-3;
+  align-self: stretch;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+
+.Header-item--full {
+  flex: auto;
+}
+
+.Header-link {
+  font-weight: $font-weight-bold;
+  color: var(--color-header-logo);
+  white-space: nowrap;
+
+  &:hover,
+  &:focus {
+    color: var(--color-header-text);
+    text-decoration: none;
+  }
+}
+
+.Header-input {
+  color: var(--color-header-text);
+  background-color: var(--color-header-search-bg);
+  border: $border-width $border-style var(--color-header-search-border);
+  box-shadow: none;
+
+  &::placeholder {
+    // stylelint-disable-next-line primer/colors
+    color: rgba(255, 255, 255, 0.75);
+  }
+}

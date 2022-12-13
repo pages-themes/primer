@@ -1,0 +1,76 @@
+// stylelint-disable selector-max-type
+.markdown-body {
+  // Inline code snippets
+  code,
+  tt {
+    // stylelint-disable-next-line primer/spacing
+    padding: 0.2em 0.4em;
+    margin: 0;
+    // stylelint-disable-next-line primer/typography
+    font-size: 85%;
+    background-color: var(--color-neutral-muted);
+    border-radius: $border-radius;
+
+    br { display: none; }
+  }
+
+  del code { text-decoration: inherit; }
+
+  samp {
+    // stylelint-disable-next-line primer/typography
+    font-size: 85%;
+  }
+
+  pre {
+    word-wrap: normal;
+
+    code {
+      // stylelint-disable-next-line primer/typography
+      font-size: 100%;
+    }
+
+    // Code tags within code blocks (<pre>s)
+    > code {
+      padding: 0;
+      margin: 0;
+      word-break: normal;
+      white-space: pre;
+      background: transparent;
+      border: 0;
+    }
+  }
+
+  .highlight {
+    margin-bottom: $spacer-3;
+
+    pre {
+      margin-bottom: 0;
+      word-break: normal;
+    }
+  }
+
+  .highlight pre,
+  pre {
+    padding: $spacer-3;
+    overflow: auto;
+    // stylelint-disable-next-line primer/typography
+    font-size: 85%;
+    // stylelint-disable-next-line primer/typography
+    line-height: 1.45;
+    background-color: var(--color-canvas-subtle);
+    border-radius: $border-radius;
+  }
+
+  pre code,
+  pre tt {
+    display: inline;
+    max-width: auto;
+    padding: 0;
+    margin: 0;
+    overflow: visible;
+    line-height: inherit;
+    word-wrap: normal;
+    background-color: transparent;
+    border: 0;
+  }
+}

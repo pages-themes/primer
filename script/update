@@ -3,7 +3,7 @@
 
 set -ex
 
-rm -Rf _sass/primer-*
+rm -Rf _sass/@primer
 
 npm update
 npx primer-sync _sass
