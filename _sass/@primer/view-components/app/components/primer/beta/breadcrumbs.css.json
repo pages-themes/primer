@@ -1,0 +1,1 @@
+{"name":"beta/breadcrumbs","selectors":[".breadcrumb-item",".breadcrumb-item:after",".breadcrumb-item:first-child",":is(.breadcrumb-item-selected",".breadcrumb-item[aria-current]:not([aria-current=false])):after",".breadcrumb-item-selected a"]}

@@ -1,0 +1,1 @@
+{"name":"timeline_item_component","selectors":[".TimelineItem",".TimelineItem:before",".TimelineItem:target .TimelineItem-badge",".TimelineItem-badge",".TimelineItem-badge--success",".TimelineItem-body",".TimelineItem-avatar",".TimelineItem-break",".TimelineItem--condensed",".TimelineItem--condensed:last-child",".TimelineItem--condensed .TimelineItem-badge"]}
