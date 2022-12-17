@@ -1,0 +1,11 @@
+{% capture theme %}{% if page.theme %}{{ page.theme }}{% else %}{{ site.primer.theme }}{% endif %}{% endcapture -%}
+{%- if theme contains "light" -%}
+  data-color-mode="light" data-light-theme="{{ theme }}"
+{%- elsif theme contains "dark" -%}
+  data-color-mode="dark" data-dark-theme="{{ theme }}"
+{%- elsif theme contains "auto" -%}
+  {%- assign partial_theme = theme | remove_first: "auto" -%}
+  data-color-mode="auto" data-light-theme="light{{ partial_theme }}" data-dark-theme="dark{{ partial_theme }}"
+{%- else -%}
+  data-color-mode="light" data-light-theme="light"
+{%- endif -%}
