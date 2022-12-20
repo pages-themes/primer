@@ -1,0 +1,118 @@
+// Headings
+.h0-mktg,
+.h1-mktg,
+.h2-mktg,
+.h3-mktg,
+.h4-mktg,
+.h5-mktg,
+.h6-mktg {
+  font-family: $font-mktg;
+  font-feature-settings: $mktg-font-feature-settings;
+  // stylelint-disable-next-line primer/typography
+  font-weight: $mktg-header-weight-default !important;
+  letter-spacing: $mktg-header-spacing-default !important;
+}
+
+@each $header, $sizes in $mktg-headers {
+  .h#{$header}-mktg {
+    $pairing: map-get($mktg-header-pairings, nth($sizes, 1));
+    $pairing-md: map-get($mktg-header-pairings, nth($sizes, 2));
+    $pairing-lg: map-get($mktg-header-pairings, nth($sizes, 3));
+
+    font-size: map-get($pairing, 'size') !important;
+    line-height: map-get($pairing, 'lh') !important;
+
+    @if (map-get($pairing, 'size') >= $mktg-header-weight-threshold) { font-weight: $mktg-header-weight-large !important; }
+
+    @if (nth($sizes, 1) != nth($sizes, 2)) {
+      @include breakpoint(md) {
+        font-size: map-get($pairing-md, 'size') !important;
+        line-height: map-get($pairing-md, 'lh') !important;
+
+        @if (map-get($pairing-md, 'size') >= $mktg-header-spacing-threshold and map-get($pairing, 'size') < $mktg-header-spacing-threshold) {
+          letter-spacing: $mktg-header-spacing-large !important;
+        }
+
+        @if (map-get($pairing-md, 'size') >= $mktg-header-weight-threshold and map-get($pairing, 'size') < $mktg-header-weight-threshold) {
+          font-weight: $mktg-header-weight-large !important;
+        }
+      }
+    }
+
+    @if (nth($sizes, 2) != nth($sizes, 3)) {
+      @include breakpoint(lg) {
+        font-size: map-get($pairing-lg, 'size') !important;
+        line-height: map-get($pairing-lg, 'lh') !important;
+
+        @if (map-get($pairing-lg, 'size') >= $mktg-header-spacing-threshold and map-get($pairing-md, 'size') < $mktg-header-spacing-threshold) {
+          letter-spacing: $mktg-header-spacing-large !important;
+        }
+
+        @if (map-get($pairing-lg, 'size') >= $mktg-header-weight-threshold and map-get($pairing-md, 'size') < $mktg-header-weight-threshold) {
+          font-weight: $mktg-header-weight-large !important;
+        }
+      }
+    }
+  }
+}
+
+.f0-mktg,
+.f1-mktg,
+.f2-mktg,
+.f3-mktg,
+.f4-mktg,
+.f5-mktg,
+.f6-mktg {
+  font-family: $font-mktg;
+  font-feature-settings: $mktg-font-feature-settings;
+  font-weight: $font-weight-normal;
+}
+
+@each $body, $sizes in $mktg-bodies {
+  .f#{$body}-mktg {
+    $pairing: map-get($mktg-body-pairings, nth($sizes, 1));
+    $pairing-md: map-get($mktg-body-pairings, nth($sizes, 2));
+    $pairing-lg: map-get($mktg-body-pairings, nth($sizes, 3));
+
+    font-size: map-get($pairing, 'size') !important;
+    line-height: map-get($pairing, 'lh') !important;
+
+    @if (map-get($pairing, 'size') >= $mktg-body-spacing-threshold) { letter-spacing: $mktg-body-spacing-large !important; }
+
+    @if (map-get($pairing, 'size') >= $mktg-body-weight-threshold) { font-weight: $font-weight-semibold; }
+
+    @if (nth($sizes, 1) != nth($sizes, 2)) {
+      @include breakpoint(md) {
+        font-size: map-get($pairing-md, 'size') !important;
+        line-height: map-get($pairing-md, 'lh') !important;
+
+        @if (map-get($pairing-md, 'size') >= $mktg-body-spacing-threshold and map-get($pairing, 'size') < $mktg-body-spacing-threshold) {
+          letter-spacing: $mktg-body-spacing-large !important;
+        }
+
+        @if (map-get($pairing-md, 'size') >= $mktg-body-weight-threshold and map-get($pairing, 'size') < $mktg-body-weight-threshold) {
+          font-weight: $font-weight-medium;
+        }
+      }
+    }
+
+    @if (nth($sizes, 2) != nth($sizes, 3)) {
+      @include breakpoint(lg) {
+        font-size: map-get($pairing-lg, 'size') !important;
+        line-height: map-get($pairing-lg, 'lh') !important;
+
+        @if (map-get($pairing-lg, 'size') >= $mktg-body-spacing-threshold and map-get($pairing-md, 'size') < $mktg-body-spacing-threshold) {
+          letter-spacing: $mktg-body-spacing-large !important;
+        }
+
+        @if (map-get($pairing-lg, 'size') >= $mktg-body-weight-threshold and map-get($pairing-md, 'size') < $mktg-body-weight-threshold) {
+          font-weight: $font-weight-medium;
+        }
+      }
+    }
+  }
+}
+
+.text-medium {
+  font-weight: $font-weight-medium !important;
+}

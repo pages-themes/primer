@@ -1,0 +1,1 @@
+{"name":"beta/link","selectors":[".Link",".Link:hover",".Link:focus",".Link:focus-visible",".Link--primary",".Link--primary:hover",".Link--secondary",".Link--secondary:hover",".Link--muted",".Link--muted:hover",".Link--onHover:hover",".Link--muted:hover [class*=color-fg]",".Link--primary:hover [class*=color-fg]",".Link--secondary:hover [class*=color-fg]"]}

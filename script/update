@@ -3,9 +3,10 @@
 
 set -ex
 
-rm -Rf _sass/primer-*
+rm -Rf _sass/@primer
 
 npm update
 npx primer-sync _sass
+cp -r node_modules/@primer/view-components _sass/@primer # primer-sync doesn't copy this because there are no scss files
 
 rm -rf node_modules

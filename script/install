@@ -14,11 +14,12 @@ fi
 
 # Add our own theme scss file for consistency of naming in `assets/style.scss`
 content='
-@import "primer-support/index.scss";
-@import "primer-base/index.scss";
-@import "primer-utilities/index.scss";
-@import "primer-layout/index.scss";
-@import "primer-markdown/index.scss";
+@import "@primer/css/color-modes/index.scss";
+@import "@primer/css/support/index.scss";
+@import "@primer/css/base/index.scss";
+@import "@primer/css/utilities/index.scss";
+@import "@primer/css/layout/index.scss";
+@import "@primer/css/markdown/index.scss";
 @import "rouge";
 '
 echo "$content" >> _sass/jekyll-theme-primer.scss

@@ -1,0 +1,44 @@
+
+// Do not edit directly
+// Generated on Mon, 17 Oct 2022 21:56:43 GMT
+
+$primer-text-codeInline-size: 0.9285em;
+$primer-text-codeBlock-lineHeight: calc(20/13);
+$primer-text-codeBlock-size: 0.8125rem;
+$primer-text-caption-lineHeight: calc(16/12);
+$primer-text-caption-size: 0.75rem;
+$primer-text-body-lineHeight-small: calc(20/12);
+$primer-text-body-lineHeight-medium: calc(20/14);
+$primer-text-body-lineHeight-large: calc(24/16);
+$primer-text-body-size-small: 0.75rem;
+$primer-text-body-size-medium: 0.875rem;
+$primer-text-body-size-large: 1rem;
+$primer-text-subtitle-lineHeight: calc(32/20);
+$primer-text-subtitle-size: 1.25rem;
+$primer-text-title-lineHeight-medium: calc(32/20);
+$primer-text-title-lineHeight-large: calc(48/32);
+$primer-text-title-size-medium: 1.25rem;
+$primer-text-title-size-large: 2rem;
+$primer-text-display-lineHeight: calc(56/40);
+$primer-text-display-size: 2.5rem;
+$primer-text-display-lineBoxHeight: 3.5rem;
+$primer-fontStack-monospace: ui-monospace, SFMono-Regular, SF Mono, Menlo, Consolas, Liberation Mono, monospace;
+$primer-fontStack-sansSerif: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji';
+$primer-fontStack-system: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji';
+$primer-text-codeInline-weight: $base-text-weight-normal;
+$primer-text-codeBlock-weight: $base-text-weight-normal;
+$primer-text-caption-weight: $base-text-weight-normal;
+$primer-text-body-weight: $base-text-weight-normal;
+$primer-text-subtitle-weight: $base-text-weight-normal;
+$primer-text-title-weight: $base-text-weight-semibold;
+$primer-text-display-weight: $base-text-weight-medium;
+$primer-text-codeInline-shorthand: $primer-text-codeInline-weight $primer-text-codeInline-size $primer-fontStack-monospace;
+$primer-text-codeBlock-shorthand: $primer-text-codeBlock-weight $primer-text-codeBlock-size/$primer-text-codeBlock-lineHeight $primer-fontStack-monospace;
+$primer-text-caption-shorthand: $primer-text-caption-weight $primer-text-caption-size/$primer-text-caption-lineHeight $primer-fontStack-sansSerif;
+$primer-text-body-shorthand-small: $primer-text-body-weight $primer-text-body-size-small/$primer-text-body-lineHeight-small $primer-fontStack-sansSerif;
+$primer-text-body-shorthand-medium: $primer-text-body-weight $primer-text-body-size-medium/$primer-text-body-lineHeight-medium $primer-fontStack-sansSerif;
+$primer-text-body-shorthand-large: $primer-text-body-weight $primer-text-body-size-large/$primer-text-body-lineHeight-large $primer-fontStack-sansSerif;
+$primer-text-subtitle-shorthand: $primer-text-subtitle-weight $primer-text-subtitle-size/$primer-text-subtitle-lineHeight $primer-fontStack-sansSerif;
+$primer-text-title-shorthand-medium: $primer-text-title-weight $primer-text-title-size-medium/$primer-text-title-lineHeight-medium $primer-fontStack-sansSerif;
+$primer-text-title-shorthand-large: $primer-text-title-weight $primer-text-title-size-large/$primer-text-title-lineHeight-large $primer-fontStack-sansSerif;
+$primer-text-display-shorthand: $primer-text-display-weight $primer-text-display-size/$primer-text-display-lineHeight $primer-fontStack-sansSerif;

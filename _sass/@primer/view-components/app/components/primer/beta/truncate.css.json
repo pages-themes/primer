@@ -1,0 +1,1 @@
+{"name":"beta/truncate","selectors":[".Truncate",".Truncate>.Truncate-text",":is(.Truncate>.Truncate-text)+.Truncate-text",".Truncate>.Truncate-text.Truncate-text--primary",".Truncate>.Truncate-text.Truncate-text--expandable:active",".Truncate>.Truncate-text.Truncate-text--expandable:focus",".Truncate>.Truncate-text.Truncate-text--expandable:hover"]}

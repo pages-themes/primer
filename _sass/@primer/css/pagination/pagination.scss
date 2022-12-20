@@ -1,0 +1,156 @@
+// Needs refactoring
+// stylelint-disable selector-max-type
+.pagination {
+  a,
+  span,
+  em {
+    min-width: 32px;
+    // stylelint-disable-next-line primer/spacing
+    padding: 5px 10px;
+    font-style: normal;
+    // stylelint-disable-next-line primer/typography
+    line-height: 20px;
+    color: var(--color-fg-default);
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    user-select: none;
+    border: $border-width $border-style transparent;
+    border-radius: $border-radius;
+    transition: border-color 0.2s cubic-bezier(0.3, 0, 0.5, 1);
+
+    &:hover,
+    &:focus {
+      text-decoration: none;
+      border-color: var(--color-border-default);
+      transition-duration: 0.1s;
+    }
+
+    &:active {
+      border-color: var(--color-border-muted);
+      transition: none;
+    }
+  }
+
+  .previous_page,
+  .next_page {
+    color: var(--color-accent-fg);
+  }
+
+  .current,
+  .current:hover,
+  [aria-current]:not([aria-current='false']) {
+    color: var(--color-fg-on-emphasis);
+    background-color: var(--color-accent-emphasis);
+    border-color: transparent;
+  }
+
+  .gap,
+  .disabled,
+  [aria-disabled='true'],
+  .gap:hover,
+  .disabled:hover,
+  [aria-disabled='true']:hover {
+    color: var(--color-primer-fg-disabled);
+    cursor: default;
+    border-color: transparent;
+  }
+
+  // chevron icons using clip-path
+  @supports (clip-path: polygon(50% 0, 100% 50%, 50% 100%)) {
+    .previous_page::before,
+    .next_page::after {
+      display: inline-block;
+      width: 16px;
+      height: 16px;
+      vertical-align: text-bottom;
+      content: '';
+      // stylelint-disable-next-line primer/colors
+      background-color: currentColor;
+    }
+
+    // chevron-left
+    .previous_page::before {
+      margin-right: $spacer-1;
+      clip-path:
+        polygon(
+          9.8px 12.8px,
+          8.7px 12.8px,
+          4.5px 8.5px,
+          4.5px 7.5px,
+          8.7px 3.2px,
+          9.8px 4.3px,
+          6.1px 8px,
+          9.8px 11.7px,
+          9.8px 12.8px
+        );
+    }
+
+    // chevron-right
+    .next_page::after {
+      margin-left: $spacer-1;
+      clip-path:
+        polygon(
+          6.2px 3.2px,
+          7.3px 3.2px,
+          11.5px 7.5px,
+          11.5px 8.5px,
+          7.3px 12.8px,
+          6.2px 11.7px,
+          9.9px 8px,
+          6.2px 4.3px,
+          6.2px 3.2px
+        );
+    }
+  }
+
+  // Responsive
+
+  // Hide everything by default
+  > * {
+    display: none;
+  }
+
+  // 0 -> sm
+  // Only show [Previous] [Next]
+
+  > :first-child,
+  > :last-child,
+  > .previous_page,
+  > .next_page {
+    display: inline-block;
+  }
+
+  // sm -> md
+  // Also show [first] [last] [current number] and [...]
+
+  @include breakpoint(sm) {
+    > :nth-child(2),
+    > :nth-last-child(2),
+    > .current,
+    > .gap {
+      display: inline-block;
+    }
+  }
+
+  // md -> or more
+  // Show everything
+
+  @include breakpoint(md) {
+    > * {
+      display: inline-block;
+    }
+  }
+}
+
+// Unified centered pagination across the site
+.paginate-container {
+  margin-top: $spacer-3;
+  margin-bottom: $spacer-3;
+  text-align: center;
+
+  .pagination {
+    display: inline-block;
+  }
+}

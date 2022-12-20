@@ -1,0 +1,160 @@
+// stylelint-disable selector-max-type, selector-no-qualifying-type, primer/typography
+* {
+  box-sizing: border-box;
+}
+
+input,
+select,
+textarea,
+button {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+body {
+  font-family: $body-font;
+  font-size: var(--body-font-size, $body-font-size);
+  line-height: $body-line-height;
+  color: var(--color-fg-default);
+  background-color: var(--color-canvas-default);
+}
+
+a {
+  color: var(--color-accent-fg);
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+b,
+strong {
+  font-weight: $font-weight-bold;
+}
+
+fieldset {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+label {
+  font-weight: $font-weight-bold;
+}
+
+// Custom styling for HTML5 validation bubbles (WebKit only)
+::placeholder {
+  color: var(--color-fg-subtle);
+  opacity: 1; // override opacity in normalize.css
+}
+
+// Horizontal lines
+//
+// TODO-MDO: Remove `.rule` from everywhere and replace with `<hr>`s
+hr,
+.rule {
+  height: 0;
+  // stylelint-disable-next-line primer/spacing
+  margin: 15px 0;
+  overflow: hidden;
+  background: transparent;
+  border: 0;
+  border-bottom: $border-width $border-style var(--color-border-muted);
+
+  @include clearfix();
+}
+
+//
+// Remove most spacing between table cells.
+//
+
+table {
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+
+td,
+th {
+  padding: 0;
+}
+
+button {
+  cursor: pointer;
+  // Remove border radius added by Chrome macOS
+  border-radius: 0;
+}
+
+// increase the selector specificity for [hidden]
+// so that it always overrides utility classes (.d-block, etc.)
+[hidden][hidden] {
+  display: none !important;
+}
+
+details {
+  summary {
+    cursor: pointer;
+  }
+
+  &:not([open]) {
+    // Set details content hidden by default for browsers that don't do this
+    > *:not(summary) {
+      display: none !important;
+    }
+  }
+}
+
+// global focus styles
+
+a,
+button,
+[role='button'],
+input[type='radio'],
+input[type='checkbox'] {
+  // fallback :focus state
+  &:focus {
+    @include focusOutline;
+
+    // remove fallback :focus if :focus-visible is supported
+    &:not(:focus-visible) {
+      outline: solid 1px transparent;
+    }
+  }
+
+  // default focus state
+  &:focus-visible {
+    @include focusOutline;
+  }
+}
+
+a:not([class]),
+input[type='radio'],
+input[type='checkbox'] {
+  &:focus,
+  &:focus-visible {
+    outline-offset: 0;
+  }
+}
+
+// for handling focus conditionally
+.focus {
+  @include focusBoxShadowInset;
+}
+
+// Windows High Contrast mode
+@media (forced-colors: active) {
+  *:focus,
+  *:focus-visible {
+    outline: solid 1px transparent;
+  }
+
+  input:not([type='radio'], [type='checkbox']),
+  textarea,
+  select {
+    &:focus,
+    &:focus-visible {
+      outline-offset: 2px;
+    }
+  }
+}
