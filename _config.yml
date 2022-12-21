@@ -4,7 +4,6 @@ exclude:
 
 sass:
   style: :compressed
-  implementation: sass-embedded
 
 theme: jekyll-theme-primer
 
