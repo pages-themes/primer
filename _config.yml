@@ -5,9 +5,7 @@ exclude:
 sass:
   style: :compressed
 
-remote-theme: san-s-on/jekyll-theme-primer
-plugins:
-    - jekyll-remote-theme
+theme: jekyll-theme-primer
 
 github:
   private: false
