@@ -1,0 +1,20 @@
+/*!
+ * Primer CSS
+ * https://primer.style
+ *
+ * Released under MIT license.
+ */
+
+// Primer main file
+//
+// Imports all Primer files in their intended order for easy mass-inclusion.
+// Should you need specific files, you can easily use separate `@import`s.
+
+// CSS color variables
+@import './color-modes/index.scss';
+@import './primitives/index.scss';
+
+// Global requirements
+@import './core/index.scss';
+@import './product/index.scss';
+@import './marketing/index.scss';

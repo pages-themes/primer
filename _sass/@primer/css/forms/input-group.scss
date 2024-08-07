@@ -1,0 +1,81 @@
+.input-group {
+  display: table;
+
+  .form-control {
+    position: relative;
+    width: 100%;
+
+    &:focus {
+      z-index: 2;
+    }
+
+    + .btn {
+      margin-left: 0;
+    }
+  }
+
+  // For when you want the input group to behave like inline-block.
+  &.inline {
+    display: inline-table;
+  }
+
+  // within input group, if button exists change focus styles to match input (no offset)
+  &:focus-within {
+    // stylelint-disable-next-line selector-max-type
+    button {
+      outline-offset: 0;
+    }
+  }
+
+  // Autocomplete with embedded icon
+  .form-control.autocomplete-embedded-icon-wrap {
+    display: inline-flex;
+    padding: calc(var(--base-size-4) * 1.25) var(--base-size-8);
+  }
+}
+
+.input-group .form-control,
+.input-group-button {
+  display: table-cell;
+}
+
+.input-group-button {
+  width: 1%;
+  vertical-align: middle; // Match the inputs
+}
+
+.input-group-button--autocomplete-embedded-icon {
+  vertical-align: bottom;
+}
+
+.input-group .form-control:first-child,
+.input-group-button:first-child .btn {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.input-group .form-control:first-child,
+.input-group-button:first-child .btn:not(.btn-primary) {
+  border-color: var(--control-borderColor-rest, var(--color-border-default));
+}
+
+.input-group-button:first-child .btn {
+  // stylelint-disable-next-line primer/spacing
+  margin-right: -1px;
+}
+
+.input-group .form-control:last-child,
+.input-group-button:last-child .btn {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.input-group .form-control:last-child,
+.input-group-button:last-child .btn:not(.btn-primary) {
+  border-color: var(--control-borderColor-rest, var(--color-border-default));
+}
+
+.input-group-button:last-child .btn {
+  // stylelint-disable-next-line primer/spacing
+  margin-left: -1px;
+}
