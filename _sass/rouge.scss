@@ -17,7 +17,7 @@
   font-weight: bold;
   font-style: italic;
 }
-.highlight .c, .highlight .cd {
+.highlight .c, .highlight .ch, .highlight .cd, .highlight .cpf {
   color: #999988;
   font-style: italic;
 }
@@ -104,6 +104,10 @@
 .highlight .m, .highlight .mb, .highlight .mx {
   color: #009999;
 }
+.highlight .sa {
+  color: #000000;
+  font-weight: bold;
+}
 .highlight .sb {
   color: #d14;
 }
@@ -137,7 +141,7 @@
 .highlight .ss {
   color: #990073;
 }
-.highlight .s {
+.highlight .s, .highlight .dl {
   color: #d14;
 }
 .highlight .na {
@@ -167,7 +171,7 @@
   color: #990000;
   font-weight: bold;
 }
-.highlight .nf {
+.highlight .nf, .highlight .fm {
   color: #990000;
   font-weight: bold;
 }
@@ -190,7 +194,7 @@
 .highlight .vi {
   color: #008080;
 }
-.highlight .nv {
+.highlight .nv, .highlight .vm {
   color: #008080;
 }
 .highlight .ow {

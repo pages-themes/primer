@@ -1,0 +1,65 @@
+// GRID
+
+// Columns
+.col-1 { width: (1 * 0.0833333333 * 100%); }
+.col-2 { width: (2 * 0.0833333333 * 100%); }
+.col-3 { width: (3 * 0.0833333333 * 100%); }
+.col-4 { width: (4 * 0.0833333333 * 100%); }
+.col-5 { width: (5 * 0.0833333333 * 100%); }
+.col-6 { width: (6 * 0.0833333333 * 100%); }
+.col-7 { width: (7 * 0.0833333333 * 100%); }
+.col-8 { width: (8 * 0.0833333333 * 100%); }
+.col-9 { width: (9 * 0.0833333333 * 100%); }
+.col-10 { width: (10 * 0.0833333333 * 100%); }
+.col-11 { width: (11 * 0.0833333333 * 100%); }
+.col-12 { width: 100%; }
+
+@each $breakpoint in map-keys($breakpoints) {
+  @include breakpoint($breakpoint) {
+    .col-#{$breakpoint}-1 { width: ( 1 * 0.0833333333 * 100%); }
+    .col-#{$breakpoint}-2 { width: ( 2 * 0.0833333333 * 100%); }
+    .col-#{$breakpoint}-3 { width: ( 3 * 0.0833333333 * 100%); }
+    .col-#{$breakpoint}-4 { width: ( 4 * 0.0833333333 * 100%); }
+    .col-#{$breakpoint}-5 { width: ( 5 * 0.0833333333 * 100%); }
+    .col-#{$breakpoint}-6 { width: ( 6 * 0.0833333333 * 100%); }
+    .col-#{$breakpoint}-7 { width: ( 7 * 0.0833333333 * 100%); }
+    .col-#{$breakpoint}-8 { width: ( 8 * 0.0833333333 * 100%); }
+    .col-#{$breakpoint}-9 { width: ( 9 * 0.0833333333 * 100%); }
+    .col-#{$breakpoint}-10 { width: ( 10 * 0.0833333333 * 100%); }
+    .col-#{$breakpoint}-11 { width: ( 11 * 0.0833333333 * 100%); }
+    .col-#{$breakpoint}-12 { width: 100%; }
+  }
+}
+
+// Gutters
+// Apply padding and a negative margin to the outside of the container
+// stylelint-disable primer/spacing
+@mixin gutters ($gutter-width: var(--base-size-16)) {
+  margin-right: calc($gutter-width * -1);
+  margin-left: calc($gutter-width * -1);
+
+  > [class*='col-'] {
+    padding-right: $gutter-width !important;
+    padding-left: $gutter-width !important;
+  }
+}
+
+.gutter {
+  @include gutters(var(--base-size-16));
+}
+
+.gutter-condensed {
+  @include gutters(var(--base-size-8));
+}
+
+.gutter-spacious {
+  @include gutters(var(--base-size-24));
+}
+
+@each $breakpoint in map-keys($breakpoints) {
+  @include breakpoint($breakpoint) {
+    .gutter-#{$breakpoint} { @include gutters(var(--base-size-16)); }
+    .gutter-#{$breakpoint}-condensed { @include gutters(var(--base-size-8)); }
+    .gutter-#{$breakpoint}-spacious { @include gutters(var(--base-size-24)); }
+  }
+}

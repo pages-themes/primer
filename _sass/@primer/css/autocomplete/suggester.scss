@@ -1,0 +1,92 @@
+// Needs refactoring
+// stylelint-disable selector-max-type, selector-no-qualifying-type
+
+.suggester {
+  position: relative;
+  top: 0;
+  left: 0;
+  min-width: 180px;
+  padding: 0;
+  margin: 0;
+  margin-top: var(--base-size-24);
+  list-style: none;
+  cursor: pointer;
+  background: var(--overlay-bgColor, var(--color-canvas-overlay));
+  border: $border-width $border-style var(--borderColor-default, var(--color-border-default));
+  border-radius: $border-radius;
+  box-shadow: var(--shadow-resting-medium, var(--color-shadow-medium));
+
+  li {
+    display: block;
+    padding: var(--base-size-4) var(--base-size-8);
+    font-weight: $font-weight-semibold;
+    border-bottom: $border-width $border-style var(--borderColor-muted, var(--color-border-muted));
+
+    small {
+      font-weight: $font-weight-normal;
+      color: var(--fgColor-muted, var(--color-fg-muted));
+    }
+
+    &:last-child {
+      border-bottom: 0;
+      border-bottom-right-radius: $border-radius;
+      border-bottom-left-radius: $border-radius;
+    }
+
+    &:first-child {
+      border-top-left-radius: $border-radius;
+      border-top-right-radius: $border-radius;
+    }
+
+    &:hover {
+      color: var(--fgColor-onEmphasis, var(--color-fg-on-emphasis));
+      text-decoration: none;
+      background: var(--bgColor-accent-emphasis, var(--color-accent-emphasis));
+
+      small {
+        color: var(--fgColor-onEmphasis, var(--color-fg-on-emphasis));
+      }
+
+      .octicon {
+        color: inherit !important;
+      }
+    }
+
+    &[aria-selected='true'],
+    &.navigation-focus {
+      color: var(--fgColor-onEmphasis, var(--color-fg-on-emphasis));
+      text-decoration: none;
+      background: var(--bgColor-accent-emphasis, var(--color-accent-emphasis));
+
+      small {
+        color: var(--fgColor-onEmphasis, var(--color-fg-on-emphasis));
+      }
+
+      .octicon {
+        color: inherit !important;
+      }
+    }
+  }
+}
+
+.suggester-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 30;
+}
+
+// Responsive
+
+.page-responsive {
+  @media (max-width: $width-sm) {
+    .suggester-container {
+      right: var(--base-size-8) !important;
+      left: var(--base-size-8) !important;
+    }
+
+    .suggester li {
+      padding: var(--base-size-8) var(--base-size-16);
+    }
+  }
+}
