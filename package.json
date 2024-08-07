@@ -10,5 +10,8 @@
   "license": "MIT",
   "dependencies": {
     "@primer/css": "^21.3.6"
+  },
+  "devDependencies": {
+    "@primer/sync": "^2.0.0"
   }
 }
