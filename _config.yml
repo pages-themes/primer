@@ -4,6 +4,8 @@ exclude:
 
 sass:
   style: :compressed
+  load_paths:
+    - ../node_modules/
 
 theme: jekyll-theme-primer
 
