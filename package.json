@@ -9,7 +9,7 @@
   "author": "Ben Balter",
   "license": "MIT",
   "dependencies": {
-    "primer-base": "^1.9.2",
+    "primer-base": "^2.0.0",
     "primer-layout": "^1.6.2",
     "primer-markdown": "^3.7.13",
     "primer-support": "^4.7.2",
