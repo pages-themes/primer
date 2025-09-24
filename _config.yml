@@ -14,7 +14,7 @@ github:
   source:
     branch: "master"
     path: "/"
-  repository_url: "https://github.com/pages-themes/primer"
-  
-title: Jekyll Theme Primer
-description: Primer is a Jekyll theme for GitHub Pages
+  repository_url: "https://github.com/roopabuddha/primer"
+
+title: Roopa Kiran Portfolio
+description: Data Science and Machine Learning projects by Roopa Kiran
